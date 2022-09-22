@@ -9,13 +9,27 @@
 /* Begin PBXBuildFile section */
 		2E782FBA28DC5563003C102B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E782FB928DC5563003C102B /* AppDelegate.swift */; };
 		2E782FBC28DC5563003C102B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E782FBB28DC5563003C102B /* SceneDelegate.swift */; };
-		2E782FBE28DC5563003C102B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E782FBD28DC5563003C102B /* ViewController.swift */; };
-		2E782FC128DC5563003C102B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E782FBF28DC5563003C102B /* Main.storyboard */; };
 		2E782FC328DC5564003C102B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E782FC228DC5564003C102B /* Assets.xcassets */; };
 		2E782FC628DC5564003C102B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E782FC428DC5564003C102B /* LaunchScreen.storyboard */; };
 		2E782FD128DC5564003C102B /* LabrandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E782FD028DC5564003C102B /* LabrandTests.swift */; };
 		2E782FDB28DC5564003C102B /* LabrandUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E782FDA28DC5564003C102B /* LabrandUITests.swift */; };
 		2E782FDD28DC5564003C102B /* LabrandUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E782FDC28DC5564003C102B /* LabrandUITestsLaunchTests.swift */; };
+		2E782FF228DC59A5003C102B /* Metropolis-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2E782FEB28DC59A5003C102B /* Metropolis-Bold.otf */; };
+		2E782FF328DC59A5003C102B /* Metropolis-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2E782FEC28DC59A5003C102B /* Metropolis-Thin.otf */; };
+		2E782FF428DC59A5003C102B /* Metropolis-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2E782FED28DC59A5003C102B /* Metropolis-Light.otf */; };
+		2E782FF528DC59A5003C102B /* Metropolis-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2E782FEE28DC59A5003C102B /* Metropolis-Regular.otf */; };
+		2E782FF628DC59A5003C102B /* Metropolis-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2E782FEF28DC59A5003C102B /* Metropolis-Black.otf */; };
+		2E782FF728DC59A5003C102B /* Metropolis-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2E782FF028DC59A5003C102B /* Metropolis-Medium.otf */; };
+		2E782FF828DC59A5003C102B /* Metropolis-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2E782FF128DC59A5003C102B /* Metropolis-SemiBold.otf */; };
+		2E782FFB28DC5A62003C102B /* UIFont-extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E782FFA28DC5A62003C102B /* UIFont-extension.swift */; };
+		2E78300128DC6314003C102B /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E78300028DC6314003C102B /* UIColor.swift */; };
+		2E78300328DC632E003C102B /* AssetColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E78300228DC632E003C102B /* AssetColors.swift */; };
+		2E78300628DC636C003C102B /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E78300528DC636C003C102B /* AppInfo.swift */; };
+		2E78300828DC6443003C102B /* GCDUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E78300728DC6443003C102B /* GCDUtils.swift */; };
+		2E78300A28DC6541003C102B /* KeyboardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E78300928DC6541003C102B /* KeyboardService.swift */; };
+		2E78300E28DC66F5003C102B /* AppService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E78300D28DC66F5003C102B /* AppService.swift */; };
+		2E78301128DC6769003C102B /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E78301028DC6769003C102B /* Constant.swift */; };
+		2E78301628DC6936003C102B /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E78301528DC6936003C102B /* LaunchScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +53,6 @@
 		2E782FB628DC5563003C102B /* Labrand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Labrand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E782FB928DC5563003C102B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E782FBB28DC5563003C102B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2E782FBD28DC5563003C102B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2E782FC028DC5563003C102B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2E782FC228DC5564003C102B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E782FC528DC5564003C102B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E782FC728DC5564003C102B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +61,22 @@
 		2E782FD628DC5564003C102B /* LabrandUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LabrandUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E782FDA28DC5564003C102B /* LabrandUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabrandUITests.swift; sourceTree = "<group>"; };
 		2E782FDC28DC5564003C102B /* LabrandUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabrandUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2E782FEB28DC59A5003C102B /* Metropolis-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-Bold.otf"; sourceTree = "<group>"; };
+		2E782FEC28DC59A5003C102B /* Metropolis-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-Thin.otf"; sourceTree = "<group>"; };
+		2E782FED28DC59A5003C102B /* Metropolis-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-Light.otf"; sourceTree = "<group>"; };
+		2E782FEE28DC59A5003C102B /* Metropolis-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-Regular.otf"; sourceTree = "<group>"; };
+		2E782FEF28DC59A5003C102B /* Metropolis-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-Black.otf"; sourceTree = "<group>"; };
+		2E782FF028DC59A5003C102B /* Metropolis-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-Medium.otf"; sourceTree = "<group>"; };
+		2E782FF128DC59A5003C102B /* Metropolis-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-SemiBold.otf"; sourceTree = "<group>"; };
+		2E782FFA28DC5A62003C102B /* UIFont-extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont-extension.swift"; sourceTree = "<group>"; };
+		2E78300028DC6314003C102B /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		2E78300228DC632E003C102B /* AssetColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetColors.swift; sourceTree = "<group>"; };
+		2E78300528DC636C003C102B /* AppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
+		2E78300728DC6443003C102B /* GCDUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDUtils.swift; sourceTree = "<group>"; };
+		2E78300928DC6541003C102B /* KeyboardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardService.swift; sourceTree = "<group>"; };
+		2E78300D28DC66F5003C102B /* AppService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppService.swift; sourceTree = "<group>"; };
+		2E78301028DC6769003C102B /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		2E78301528DC6936003C102B /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +127,14 @@
 		2E782FB828DC5563003C102B /* Labrand */ = {
 			isa = PBXGroup;
 			children = (
-				2E782FB928DC5563003C102B /* AppDelegate.swift */,
-				2E782FBB28DC5563003C102B /* SceneDelegate.swift */,
-				2E782FBD28DC5563003C102B /* ViewController.swift */,
-				2E782FBF28DC5563003C102B /* Main.storyboard */,
-				2E782FC228DC5564003C102B /* Assets.xcassets */,
-				2E782FC428DC5564003C102B /* LaunchScreen.storyboard */,
-				2E782FC728DC5564003C102B /* Info.plist */,
+				2E78301328DC6824003C102B /* AppDelegate */,
+				2E78301428DC68A2003C102B /* Launch */,
+				2E78301728DC6DCF003C102B /* Screens */,
+				2E782FFE28DC62CC003C102B /* Generics */,
+				2E782FFC28DC626C003C102B /* Models */,
+				2E78301228DC67E5003C102B /* ApiService */,
+				2E782FF928DC5A4F003C102B /* Extensions */,
+				2E782FE928DC5983003C102B /* Resources */,
 			);
 			path = Labrand;
 			sourceTree = "<group>";
@@ -125,6 +154,139 @@
 				2E782FDC28DC5564003C102B /* LabrandUITestsLaunchTests.swift */,
 			);
 			path = LabrandUITests;
+			sourceTree = "<group>";
+		};
+		2E782FE928DC5983003C102B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2E782FEA28DC59A5003C102B /* Font */,
+				2E782FC228DC5564003C102B /* Assets.xcassets */,
+				2E782FC728DC5564003C102B /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2E782FEA28DC59A5003C102B /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				2E782FEB28DC59A5003C102B /* Metropolis-Bold.otf */,
+				2E782FEC28DC59A5003C102B /* Metropolis-Thin.otf */,
+				2E782FED28DC59A5003C102B /* Metropolis-Light.otf */,
+				2E782FEE28DC59A5003C102B /* Metropolis-Regular.otf */,
+				2E782FEF28DC59A5003C102B /* Metropolis-Black.otf */,
+				2E782FF028DC59A5003C102B /* Metropolis-Medium.otf */,
+				2E782FF128DC59A5003C102B /* Metropolis-SemiBold.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		2E782FF928DC5A4F003C102B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2E782FFA28DC5A62003C102B /* UIFont-extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2E782FFC28DC626C003C102B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2E782FFD28DC6278003C102B /* Codable-Modals */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2E782FFD28DC6278003C102B /* Codable-Modals */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Codable-Modals";
+			sourceTree = "<group>";
+		};
+		2E782FFE28DC62CC003C102B /* Generics */ = {
+			isa = PBXGroup;
+			children = (
+				2E782FFF28DC62FF003C102B /* UIColor */,
+				2E78300428DC635A003C102B /* Tools */,
+				2E78300B28DC65C9003C102B /* Customs */,
+				2E78300C28DC66D9003C102B /* AppService */,
+				2E78300F28DC6755003C102B /* Constant */,
+			);
+			path = Generics;
+			sourceTree = "<group>";
+		};
+		2E782FFF28DC62FF003C102B /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				2E78300028DC6314003C102B /* UIColor.swift */,
+				2E78300228DC632E003C102B /* AssetColors.swift */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		2E78300428DC635A003C102B /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				2E78300528DC636C003C102B /* AppInfo.swift */,
+				2E78300728DC6443003C102B /* GCDUtils.swift */,
+				2E78300928DC6541003C102B /* KeyboardService.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		2E78300B28DC65C9003C102B /* Customs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Customs;
+			sourceTree = "<group>";
+		};
+		2E78300C28DC66D9003C102B /* AppService */ = {
+			isa = PBXGroup;
+			children = (
+				2E78300D28DC66F5003C102B /* AppService.swift */,
+			);
+			path = AppService;
+			sourceTree = "<group>";
+		};
+		2E78300F28DC6755003C102B /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				2E78301028DC6769003C102B /* Constant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		2E78301228DC67E5003C102B /* ApiService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ApiService;
+			sourceTree = "<group>";
+		};
+		2E78301328DC6824003C102B /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				2E782FBB28DC5563003C102B /* SceneDelegate.swift */,
+				2E782FB928DC5563003C102B /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		2E78301428DC68A2003C102B /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				2E782FC428DC5564003C102B /* LaunchScreen.storyboard */,
+				2E78301528DC6936003C102B /* LaunchScreenViewController.swift */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		2E78301728DC6DCF003C102B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +393,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E782FF428DC59A5003C102B /* Metropolis-Light.otf in Resources */,
+				2E782FF728DC59A5003C102B /* Metropolis-Medium.otf in Resources */,
+				2E782FF328DC59A5003C102B /* Metropolis-Thin.otf in Resources */,
 				2E782FC628DC5564003C102B /* LaunchScreen.storyboard in Resources */,
+				2E782FF628DC59A5003C102B /* Metropolis-Black.otf in Resources */,
+				2E782FF528DC59A5003C102B /* Metropolis-Regular.otf in Resources */,
+				2E782FF828DC59A5003C102B /* Metropolis-SemiBold.otf in Resources */,
 				2E782FC328DC5564003C102B /* Assets.xcassets in Resources */,
-				2E782FC128DC5563003C102B /* Main.storyboard in Resources */,
+				2E782FF228DC59A5003C102B /* Metropolis-Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +426,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E782FBE28DC5563003C102B /* ViewController.swift in Sources */,
+				2E78300A28DC6541003C102B /* KeyboardService.swift in Sources */,
+				2E78300828DC6443003C102B /* GCDUtils.swift in Sources */,
+				2E782FFB28DC5A62003C102B /* UIFont-extension.swift in Sources */,
+				2E78300328DC632E003C102B /* AssetColors.swift in Sources */,
+				2E78300E28DC66F5003C102B /* AppService.swift in Sources */,
 				2E782FBA28DC5563003C102B /* AppDelegate.swift in Sources */,
 				2E782FBC28DC5563003C102B /* SceneDelegate.swift in Sources */,
+				2E78301128DC6769003C102B /* Constant.swift in Sources */,
+				2E78300128DC6314003C102B /* UIColor.swift in Sources */,
+				2E78301628DC6936003C102B /* LaunchScreenViewController.swift in Sources */,
+				2E78300628DC636C003C102B /* AppInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +473,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2E782FBF28DC5563003C102B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2E782FC028DC5563003C102B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2E782FC428DC5564003C102B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -366,6 +534,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Labrand/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -420,6 +589,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Labrand/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -439,12 +609,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4V6HY9M86Z;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Labrand/Info.plist;
+				INFOPLIST_FILE = Labrand/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,9 +621,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "labrand-mersi.Labrand";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -467,12 +639,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4V6HY9M86Z;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Labrand/Info.plist;
+				INFOPLIST_FILE = Labrand/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -480,9 +651,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "labrand-mersi.Labrand";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
