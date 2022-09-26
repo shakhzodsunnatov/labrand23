@@ -8,5 +8,6 @@
 import Foundation
 
 enum AssetColors: String {
-    case placeholder
+    case viewBackground
+    case redPrimary
 }
