@@ -12,7 +12,7 @@ class AuthTextField: UITextField {
     
     let checkImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(systemName: "checkmark")?.withTintColor(.green)//.tint(tintColor: .green)
+        imageView.image = UIImage(systemName: "checkmark")?.withTintColor(.green)
         imageView.isHidden = true
         return imageView
     }()
@@ -44,14 +44,14 @@ class AuthTextField: UITextField {
                 layer.borderColor = UIColor.red.cgColor
                 titleLabel.textColor = .red
                 checkImageView.isHidden = false
-                checkImageView.image = UIImage(systemName: "xmark")?.withTintColor(.red) //.tint(tintColor: .red)
+                checkImageView.image = UIImage(systemName: "xmark")?.withRenderingMode(.alwaysOriginal).withTintColor(.red)
                 
             case .ok:
                 layer.borderWidth = 0
                 layer.borderColor = UIColor.clear.cgColor
                 titleLabel.textColor = .gray
                 checkImageView.isHidden = false
-                checkImageView.image = UIImage(systemName: "checkmark")?.withTintColor(.green) //tint(tintColor: .green)
+                checkImageView.image = UIImage(systemName: "checkmark")?.withRenderingMode(.alwaysOriginal).withTintColor(.green)
                 
             case .grayed:
                 fatalError("Not implemented yet:)")
@@ -94,23 +94,19 @@ class AuthTextField: UITextField {
     override func layoutSubviews() {
         super.layoutSubviews()
         
-//        self.pin.height(64)
         self.snp.makeConstraints { make in
             make.height.equalTo(64)
         }
-//        self.rightView?.pin.size(64)
+
         self.rightView?.snp.makeConstraints({ make in
             make.size.equalTo(64)
         })
-        
-//        checkImageView.pin.sizeToFit().center()
         
         checkImageView.sizeToFit()
         checkImageView.snp.makeConstraints { make in
             make.center.equalToSuperview()
         }
  
-//        titleLabel.pin.sizeToFit().top(14).left(20)
         titleLabel.sizeToFit()
         titleLabel.snp.makeConstraints { make in
             make.topMargin.equalTo(14)
@@ -154,6 +150,8 @@ extension AuthTextField: UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
         guard let text = textField.text else { return false }
+        
+        viewState = .normal
         
         closureTextFieldDelegate(text)
         

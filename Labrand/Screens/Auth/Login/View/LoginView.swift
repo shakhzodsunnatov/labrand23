@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 
 protocol ILoginView: AnyObject {
-    func nextButtonAction()
+    func nextButtonAction(emailText: String, passwordText: String)
 }
 
 class LoginView: BaseView {
@@ -22,7 +22,7 @@ class LoginView: BaseView {
         stack.distribution = .fill
         stack.spacing = 8
         stack.translatesAutoresizingMaskIntoConstraints = false
-        stack.setCustomSpacing(20, after: passwordTextField)
+        stack.setCustomSpacing(20, after: passwordErrorLabel)
         return stack
     }()
     private lazy var emailTextField: AuthTextField = {
@@ -44,21 +44,23 @@ class LoginView: BaseView {
         label.text = "Not a valid email address. Should be your@email.com"
         label.textColor = .red
         label.isHidden = true
+        label.textAlignment = .center
         return label
     }()
     private lazy var passwordErrorLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 11, weight: .thin)
-        label.text = "Not a valid email address. Should be your@email.com"
+        label.text = "Password is not correct"
         label.textColor = .red
         label.isHidden = true
+        label.textAlignment = .center
         return label
     }()
     private lazy var helpButton: Button = {
         let button = Button()
         button.title = "Already have an account?"
         button.titleColor = .black
-        
+        button.fontSize = 14
         button.image = UIImage(systemName: "arrow.right")
         button.contentMode = .scaleAspectFit
         button.tintColor = .appColor(.redPrimary)
@@ -66,12 +68,12 @@ class LoginView: BaseView {
         
         return button
     }()
-    private lazy var nextButton: Button = {
-        let button = Button()
-        button.title = "Login"
-        button.fontSize = 18
-        button.color = .appColor(.redPrimary)
+    private lazy var nextButton: BaseLoadingButton = {
+        let button = BaseLoadingButton()
+        button.title = "LOGIN"
+        button.font = .mediumFont()
         button.addTarget(self, action: #selector(nextButtonAction))
+        
         return button
     }()
     weak var delegate: ILoginView?
@@ -80,6 +82,7 @@ class LoginView: BaseView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
+        textFieldSubscribers()
     }
     
     required init?(coder: NSCoder) {
@@ -89,49 +92,34 @@ class LoginView: BaseView {
     //MARK: - Public
     
     @objc func nextButtonAction() {
-        delegate?.nextButtonAction()
-        
-        var allCorrect = true
-        
-//        if !(emailTextField.text?.contains("@") ?? false) {
-//            emailErrorLabel.isHidden = false
-//            emailTextField.viewState = .error
-//            allCorrect = false
-//        }
-//
-//        if emailTextField.text == "qwerty@gmail.com" {
-//            emailTextField.viewState = .ok
-//        } else {
-//            emailTextField.viewState = .error
-//            emailErrorLabel.text = "NOT CORRECT Email"
-//            emailErrorLabel.isHidden = false
-//            allCorrect = false
-//        }
-//
-//        if passwordTextField.text != "12345" {
-//            passwordTextField.viewState = .error
-//            passwordErrorLabel.isHidden = false
-//            allCorrect = false
-//        }
-        
-        if allCorrect {
-//            pushViewController(MainTapBarController())
-        }
-        
+        delegate?.nextButtonAction(emailText: emailTextField.text ?? "", passwordText: passwordTextField.text ?? "")
+    }
+    
+    func showButtonLoader(_ vale: Bool) {
+        vale ? nextButton.showLoader() : nextButton.hideLoader()
+    }
+    
+    //MARK: - Validation (Public)
+    func showEmailErrorLabel(emailError: Bool, errorMessage: String = "Not a valid email address. Should be your@email.com") {
+        emailErrorLabel.isHidden = !emailError
+        emailTextField.viewState = emailError ? .error : .normal
+        emailErrorLabel.text = errorMessage
+    }
+    
+    func showPasswordErrorLabel(passwordError: Bool, errorMessage: String = "Password is not correct") {
+        passwordErrorLabel.isHidden = !passwordError
+        passwordTextField.viewState = passwordError ? .error : .normal
+        passwordErrorLabel.text = errorMessage
     }
     
     //MARK: - Private
     private func textFieldSubscribers() {
-        
-        emailTextField.closureTextFieldDelegate = { [weak self] emailText in
+        emailTextField.closureTextFieldDelegate = { [weak self] text in
             guard let self else { return }
             self.emailErrorLabel.isHidden = true
-            self.emailTextField.viewState = .normal
         }
-        
-        passwordTextField.closureTextFieldDelegate = { [weak self] passwordText in
+        passwordTextField.closureTextFieldDelegate = { [weak self] text in
             guard let self else { return }
-            self.passwordTextField.viewState = .normal
             self.passwordErrorLabel.isHidden = true
         }
     }
@@ -141,6 +129,7 @@ class LoginView: BaseView {
 extension LoginView {
     private func setupUI() {
         self.backgroundColor = .appColor(.viewBackground)
+        self.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(UIView.endEditing(_:))))
         
         addSubview(stack)
         stack.snp.makeConstraints { make in
@@ -152,6 +141,12 @@ extension LoginView {
             make.width.equalToSuperview()
         }
         passwordTextField.snp.makeConstraints { make in
+            make.width.equalToSuperview()
+        }
+        emailErrorLabel.snp.makeConstraints { make in
+            make.width.equalToSuperview()
+        }
+        passwordErrorLabel.snp.makeConstraints { make in
             make.width.equalToSuperview()
         }
         

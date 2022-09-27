@@ -63,6 +63,9 @@
 		2E8874B128DF68CC0012DF93 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8874B028DF68CC0012DF93 /* LoginPresenter.swift */; };
 		2E8874B328DF6AA90012DF93 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8874B228DF6AA90012DF93 /* LoginRouter.swift */; };
 		2E8874B528DF70DC0012DF93 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8874B428DF70DC0012DF93 /* ApiService.swift */; };
+		2EB0B0B728E1D0D1008CE1E6 /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB0B0B628E1D0D1008CE1E6 /* BaseButton.swift */; };
+		2EF325F528E2C7D0003312CB /* LoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF325F428E2C7D0003312CB /* LoadingButton.swift */; };
+		2EF325FB28E2D819003312CB /* BaseLoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF325FA28E2D819003312CB /* BaseLoadingButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,6 +143,9 @@
 		2E8874B028DF68CC0012DF93 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		2E8874B228DF6AA90012DF93 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		2E8874B428DF70DC0012DF93 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		2EB0B0B628E1D0D1008CE1E6 /* BaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
+		2EF325F428E2C7D0003312CB /* LoadingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingButton.swift; sourceTree = "<group>"; };
+		2EF325FA28E2D819003312CB /* BaseLoadingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLoadingButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -286,6 +292,7 @@
 				2E782FFF28DC62FF003C102B /* UIColor */,
 				2E78300428DC635A003C102B /* Tools */,
 				2E78300B28DC65C9003C102B /* Customs */,
+				2EF325F328E2C7AC003312CB /* Libraries */,
 				2E8874A228DF589F0012DF93 /* Protocols */,
 				2E78300C28DC66D9003C102B /* AppService */,
 				2E78300F28DC6755003C102B /* Constant */,
@@ -318,6 +325,8 @@
 				2E78304328DDBA7A003C102B /* LoadingViews */,
 				2E78303928DD8F8C003C102B /* Button.swift */,
 				2E78306528DF3E00003C102B /* AuthTextField.swift */,
+				2EB0B0B628E1D0D1008CE1E6 /* BaseButton.swift */,
+				2EF325FA28E2D819003312CB /* BaseLoadingButton.swift */,
 			);
 			path = Customs;
 			sourceTree = "<group>";
@@ -422,12 +431,7 @@
 		2E78303528DD8E48003C102B /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				2E88749B28DF565E0012DF93 /* Configuration */,
-				2E78303628DD8E60003C102B /* View */,
-				2E88749928DF55C60012DF93 /* LoginViewController.swift */,
-				2E8874A028DF57E30012DF93 /* LoginInteractor.swift */,
-				2E8874B028DF68CC0012DF93 /* LoginPresenter.swift */,
-				2E8874B228DF6AA90012DF93 /* LoginRouter.swift */,
+				2EF325FC28E2DF90003312CB /* Login */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -471,6 +475,27 @@
 				2E8874AE28DF5AAE0012DF93 /* ApiResponseError.swift */,
 			);
 			path = ApiResponseError;
+			sourceTree = "<group>";
+		};
+		2EF325F328E2C7AC003312CB /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				2EF325F428E2C7D0003312CB /* LoadingButton.swift */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		2EF325FC28E2DF90003312CB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2E88749B28DF565E0012DF93 /* Configuration */,
+				2E78303628DD8E60003C102B /* View */,
+				2E88749928DF55C60012DF93 /* LoginViewController.swift */,
+				2E8874A028DF57E30012DF93 /* LoginInteractor.swift */,
+				2E8874B028DF68CC0012DF93 /* LoginPresenter.swift */,
+				2E8874B228DF6AA90012DF93 /* LoginRouter.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -630,6 +655,7 @@
 				2E78302B28DC87CD003C102B /* Alert.swift in Sources */,
 				2E782FFB28DC5A62003C102B /* UIFont-extension.swift in Sources */,
 				2E78303128DC886A003C102B /* UITextField-extension.swift in Sources */,
+				2EB0B0B728E1D0D1008CE1E6 /* BaseButton.swift in Sources */,
 				2E78302528DC8702003C102B /* UITableViewCell-extension.swift in Sources */,
 				2E78300328DC632E003C102B /* AssetColors.swift in Sources */,
 				2E88749A28DF55C60012DF93 /* LoginViewController.swift in Sources */,
@@ -641,6 +667,7 @@
 				2E78302F28DC882F003C102B /* TabBarController-extension.swift in Sources */,
 				2E78304828DDBC17003C102B /* CustomActivityIndicatorView.swift in Sources */,
 				2E8874A428DF58C20012DF93 /* ApiServiceProtocol.swift in Sources */,
+				2EF325F528E2C7D0003312CB /* LoadingButton.swift in Sources */,
 				2E8874B128DF68CC0012DF93 /* LoginPresenter.swift in Sources */,
 				2E78303A28DD8F8C003C102B /* Button.swift in Sources */,
 				2E78300E28DC66F5003C102B /* AppService.swift in Sources */,
@@ -649,6 +676,7 @@
 				2E78301A28DC7D0E003C102B /* BaseViewController.swift in Sources */,
 				2E782FBA28DC5563003C102B /* AppDelegate.swift in Sources */,
 				2E88749F28DF56F40012DF93 /* LoginProtocols.swift in Sources */,
+				2EF325FB28E2D819003312CB /* BaseLoadingButton.swift in Sources */,
 				2E8874AC28DF5A7E0012DF93 /* ServiceResponse.swift in Sources */,
 				2E78303E28DD95B7003C102B /* LoginView.swift in Sources */,
 				2E782FBC28DC5563003C102B /* SceneDelegate.swift in Sources */,

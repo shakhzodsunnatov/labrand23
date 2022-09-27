@@ -12,6 +12,7 @@ class LoginInteractor {
     //MARK: - Propertise
     var presenter: LoginPresentable?
     var routing: LoginRouting?
+    
     private var networkService: ApiServiceProtocol?
     
     //MARK: - Init

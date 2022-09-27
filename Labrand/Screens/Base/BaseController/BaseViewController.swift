@@ -18,6 +18,8 @@ class BaseViewController: UIViewController, UIGestureRecognizerDelegate {
         }
     }
     
+    unowned var activityLoader: CustomActivityIndicatorView!
+    
     //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
