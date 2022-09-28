@@ -77,4 +77,12 @@ class BaseNavigationController: UINavigationController, UIGestureRecognizerDeleg
     func removeLargeNavigationBarTitle() {
         self.navigationBar.prefersLargeTitles = false
     }
+    
+    func hideNavigationBar(animated: Bool = true) {
+        self.setNavigationBarHidden(true, animated: true)
+    }
+    
+    func showNavigationBar(animated: Bool = true) {
+        self.setNavigationBarHidden(false, animated: true)
+    }
 }

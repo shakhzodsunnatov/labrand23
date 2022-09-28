@@ -11,7 +11,7 @@ class LoginViewController: BaseViewController {
 
     //MARK: - Properties
     var superView: LoginView?
-    var interactor: LoginInteractor?
+    var interactor: LoginInteractable?
     
     //MARK: - Lifecycle
     override func viewDidLoad() {
@@ -34,34 +34,8 @@ extension LoginViewController {
 extension LoginViewController: ILoginView {
     func nextButtonAction(emailText: String, passwordText: String) {
         superView?.showButtonLoader(true)
-        
-        
-        //MARK: - MocData Check
-        var allCorrect = true
-        
-        if !emailText.contains("@")  {
-            superView?.showEmailErrorLabel(emailError: true, errorMessage: "Not a valid email address. Should be your@email.com")
-            allCorrect = false
-        }
-
-        if emailText == "qwerty@gmail.com" {
-//            superView.emailTextField.viewState = .ok
-        } else {
-            superView?.showEmailErrorLabel(emailError: true)
-            allCorrect = false
-        }
-
-        if passwordText != "12345" {
-            superView?.showPasswordErrorLabel(passwordError: true)
-            allCorrect = false
-        }
-        
+        interactor?.nextButtonPressed()
         superView?.showButtonLoader(false)
-        
-        if allCorrect {
-//            pushViewController(MainTapBarController())
-        }
-        
     }
     
     func emailTextFieldChanging(_ text: String) {

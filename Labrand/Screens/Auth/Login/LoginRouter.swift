@@ -10,11 +10,14 @@ import UIKit
 class LoginRouter {
     
     //MARK: - Properties
-    weak var viewController: LoginViewController?
+    var viewController: LoginViewController?
     
 }
 
 //MARK: - LoginRouting
 extension LoginRouter: LoginRouting {
-    
+    func openHome() {
+        let homeViewController = HomeConfigurator.configureModel()
+        viewController?.navigationController?.pushViewController(homeViewController, animated: true)
+    }
 }

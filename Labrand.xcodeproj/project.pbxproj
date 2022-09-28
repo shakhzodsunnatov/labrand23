@@ -66,6 +66,17 @@
 		2EB0B0B728E1D0D1008CE1E6 /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB0B0B628E1D0D1008CE1E6 /* BaseButton.swift */; };
 		2EF325F528E2C7D0003312CB /* LoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF325F428E2C7D0003312CB /* LoadingButton.swift */; };
 		2EF325FB28E2D819003312CB /* BaseLoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF325FA28E2D819003312CB /* BaseLoadingButton.swift */; };
+		2EF3260628E2FB8D003312CB /* SectionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF3260528E2FB8D003312CB /* SectionHandler.swift */; };
+		2EF3260928E2FC2D003312CB /* SectionContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF3260828E2FC2D003312CB /* SectionContainer.swift */; };
+		2EF3260D28E2FCF9003312CB /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF3260C28E2FCF9003312CB /* HomeProtocols.swift */; };
+		2EF3260F28E2FDDB003312CB /* HomeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF3260E28E2FDDB003312CB /* HomeConfigurator.swift */; };
+		2EF3261128E301A6003312CB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF3261028E301A6003312CB /* HomeViewController.swift */; };
+		2EF3261428E30588003312CB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF3261328E30588003312CB /* HomeView.swift */; };
+		2EF3261828E30909003312CB /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF3261728E30909003312CB /* HomeInteractor.swift */; };
+		2EF3261A28E30A45003312CB /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF3261928E30A45003312CB /* HomePresenter.swift */; };
+		2EF3261C28E30A9C003312CB /* HomeRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF3261B28E30A9C003312CB /* HomeRouting.swift */; };
+		2EF3261F28E30E6C003312CB /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF3261E28E30E6C003312CB /* TableViewCell.swift */; };
+		2EF3262128E30FEC003312CB /* BannerTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF3262028E30FEC003312CB /* BannerTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,6 +157,17 @@
 		2EB0B0B628E1D0D1008CE1E6 /* BaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
 		2EF325F428E2C7D0003312CB /* LoadingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingButton.swift; sourceTree = "<group>"; };
 		2EF325FA28E2D819003312CB /* BaseLoadingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLoadingButton.swift; sourceTree = "<group>"; };
+		2EF3260528E2FB8D003312CB /* SectionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHandler.swift; sourceTree = "<group>"; };
+		2EF3260828E2FC2D003312CB /* SectionContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionContainer.swift; sourceTree = "<group>"; };
+		2EF3260C28E2FCF9003312CB /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
+		2EF3260E28E2FDDB003312CB /* HomeConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeConfigurator.swift; sourceTree = "<group>"; };
+		2EF3261028E301A6003312CB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2EF3261328E30588003312CB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		2EF3261728E30909003312CB /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		2EF3261928E30A45003312CB /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		2EF3261B28E30A9C003312CB /* HomeRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouting.swift; sourceTree = "<group>"; };
+		2EF3261E28E30E6C003312CB /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		2EF3262028E30FEC003312CB /* BannerTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerTableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -296,6 +318,7 @@
 				2E8874A228DF589F0012DF93 /* Protocols */,
 				2E78300C28DC66D9003C102B /* AppService */,
 				2E78300F28DC6755003C102B /* Constant */,
+				2EF3260728E2FC14003312CB /* SectionContainer */,
 			);
 			path = Generics;
 			sourceTree = "<group>";
@@ -327,6 +350,7 @@
 				2E78306528DF3E00003C102B /* AuthTextField.swift */,
 				2EB0B0B628E1D0D1008CE1E6 /* BaseButton.swift */,
 				2EF325FA28E2D819003312CB /* BaseLoadingButton.swift */,
+				2EF3261E28E30E6C003312CB /* TableViewCell.swift */,
 			);
 			path = Customs;
 			sourceTree = "<group>";
@@ -380,6 +404,7 @@
 			isa = PBXGroup;
 			children = (
 				2E78303528DD8E48003C102B /* Auth */,
+				2EF3260A28E2FCC1003312CB /* Home */,
 				2E78301828DC7CF7003C102B /* Base */,
 			);
 			path = Screens;
@@ -465,6 +490,7 @@
 			isa = PBXGroup;
 			children = (
 				2E8874A328DF58C20012DF93 /* ApiServiceProtocol.swift */,
+				2EF3260528E2FB8D003312CB /* SectionHandler.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -496,6 +522,53 @@
 				2E8874B228DF6AA90012DF93 /* LoginRouter.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		2EF3260728E2FC14003312CB /* SectionContainer */ = {
+			isa = PBXGroup;
+			children = (
+				2EF3260828E2FC2D003312CB /* SectionContainer.swift */,
+			);
+			path = SectionContainer;
+			sourceTree = "<group>";
+		};
+		2EF3260A28E2FCC1003312CB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2EF3261228E3057B003312CB /* View */,
+				2EF3260B28E2FCE8003312CB /* Configuration */,
+				2EF3261D28E30DF7003312CB /* Cell */,
+				2EF3261028E301A6003312CB /* HomeViewController.swift */,
+				2EF3261728E30909003312CB /* HomeInteractor.swift */,
+				2EF3261928E30A45003312CB /* HomePresenter.swift */,
+				2EF3261B28E30A9C003312CB /* HomeRouting.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		2EF3260B28E2FCE8003312CB /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				2EF3260C28E2FCF9003312CB /* HomeProtocols.swift */,
+				2EF3260E28E2FDDB003312CB /* HomeConfigurator.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		2EF3261228E3057B003312CB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2EF3261328E30588003312CB /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2EF3261D28E30DF7003312CB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2EF3262028E30FEC003312CB /* BannerTableCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -647,12 +720,16 @@
 			files = (
 				2E78300A28DC6541003C102B /* KeyboardService.swift in Sources */,
 				2E78302728DC873F003C102B /* NSMutableAttributedString-extension.swift in Sources */,
+				2EF3262128E30FEC003312CB /* BannerTableCell.swift in Sources */,
 				2E78303328DC88C3003C102B /* UIApplicationExtension.swift in Sources */,
+				2EF3261428E30588003312CB /* HomeView.swift in Sources */,
 				2E78302328DC8679003C102B /* UIView-extension.swift in Sources */,
 				2E78304228DDBA40003C102B /* LoaderView.swift in Sources */,
 				2E78301D28DC7FA4003C102B /* UIColor-extension.swift in Sources */,
+				2EF3260D28E2FCF9003312CB /* HomeProtocols.swift in Sources */,
 				2E78300828DC6443003C102B /* GCDUtils.swift in Sources */,
 				2E78302B28DC87CD003C102B /* Alert.swift in Sources */,
+				2EF3261C28E30A9C003312CB /* HomeRouting.swift in Sources */,
 				2E782FFB28DC5A62003C102B /* UIFont-extension.swift in Sources */,
 				2E78303128DC886A003C102B /* UITextField-extension.swift in Sources */,
 				2EB0B0B728E1D0D1008CE1E6 /* BaseButton.swift in Sources */,
@@ -676,17 +753,24 @@
 				2E78301A28DC7D0E003C102B /* BaseViewController.swift in Sources */,
 				2E782FBA28DC5563003C102B /* AppDelegate.swift in Sources */,
 				2E88749F28DF56F40012DF93 /* LoginProtocols.swift in Sources */,
+				2EF3261828E30909003312CB /* HomeInteractor.swift in Sources */,
 				2EF325FB28E2D819003312CB /* BaseLoadingButton.swift in Sources */,
+				2EF3261A28E30A45003312CB /* HomePresenter.swift in Sources */,
 				2E8874AC28DF5A7E0012DF93 /* ServiceResponse.swift in Sources */,
 				2E78303E28DD95B7003C102B /* LoginView.swift in Sources */,
+				2EF3261F28E30E6C003312CB /* TableViewCell.swift in Sources */,
+				2EF3260628E2FB8D003312CB /* SectionHandler.swift in Sources */,
 				2E782FBC28DC5563003C102B /* SceneDelegate.swift in Sources */,
 				2E78301128DC6769003C102B /* Constant.swift in Sources */,
 				2E8874AF28DF5AAE0012DF93 /* ApiResponseError.swift in Sources */,
 				2E78300128DC6314003C102B /* UIColor.swift in Sources */,
+				2EF3261128E301A6003312CB /* HomeViewController.swift in Sources */,
 				2E88749D28DF56860012DF93 /* LoginConfigurator.swift in Sources */,
 				2E78301628DC6936003C102B /* LaunchScreenViewController.swift in Sources */,
 				2E8874B528DF70DC0012DF93 /* ApiService.swift in Sources */,
 				2E78306828DF3F25003C102B /* Enums.swift in Sources */,
+				2EF3260928E2FC2D003312CB /* SectionContainer.swift in Sources */,
+				2EF3260F28E2FDDB003312CB /* HomeConfigurator.swift in Sources */,
 				2E8874B328DF6AA90012DF93 /* LoginRouter.swift in Sources */,
 				2E78300628DC636C003C102B /* AppInfo.swift in Sources */,
 			);

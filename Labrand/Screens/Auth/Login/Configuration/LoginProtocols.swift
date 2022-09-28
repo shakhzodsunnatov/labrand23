@@ -14,7 +14,7 @@ protocol LoginPresentorOutput: AnyObject {
 
 //MARK: - Interactable
 protocol LoginInteractable: AnyObject {
-    
+    func nextButtonPressed()
 }
 
 //MARK: - Presentable
@@ -24,5 +24,5 @@ protocol LoginPresentable: AnyObject {
 
 //MARK: - Routing
 protocol LoginRouting: AnyObject {
-    
+    func openHome()
 }

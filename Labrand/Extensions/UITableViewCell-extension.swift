@@ -26,7 +26,7 @@ extension UITableViewCell
 
 
 extension UITableView {
-    func register(_ cell: AnyClass) {
+    func registerCell<Cell: UITableViewCell>(_ cell: Cell.Type) {
         self.register(cell, forCellReuseIdentifier: String(describing: cell))
     }
 

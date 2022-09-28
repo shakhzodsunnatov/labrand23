@@ -10,7 +10,7 @@ import UIKit
 class LoginPresenter {
     
     //MARK: - Properties
-    weak var viewController: LoginPresentorOutput?
+    var viewController: LoginPresentorOutput?
     
 }
 
