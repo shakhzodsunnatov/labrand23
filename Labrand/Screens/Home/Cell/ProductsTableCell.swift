@@ -88,10 +88,10 @@ class ProductsTableCell: UITableViewCell {
         
         let collection = UICollectionView(frame: .zero,
                                           collectionViewLayout: layout)
-        collection.dataSource = self
-        collection.delegate = self
-        collection.register(ShopCollectionItemCell.self,
-                            forCellWithReuseIdentifier: ShopCollectionItemCell.cellIdentifier)
+//        collection.dataSource = self
+//        collection.delegate = self
+//        collection.register(ShopCollectionItemCell.self,
+//                            forCellWithReuseIdentifier: ShopCollectionItemCell.cellIdentifier)
         collection.showsHorizontalScrollIndicator = false
         collection.backgroundColor = UIColor.clear
         

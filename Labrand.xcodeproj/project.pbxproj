@@ -49,7 +49,6 @@
 		2E78303E28DD95B7003C102B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E78303D28DD95B7003C102B /* LoginView.swift */; };
 		2E78304028DDBA27003C102B /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E78303F28DDBA27003C102B /* BaseView.swift */; };
 		2E78304228DDBA40003C102B /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E78304128DDBA40003C102B /* LoaderView.swift */; };
-		2E78304628DDBBF5003C102B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2E78304528DDBBF5003C102B /* SnapKit */; };
 		2E78304828DDBC17003C102B /* CustomActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E78304728DDBC17003C102B /* CustomActivityIndicatorView.swift */; };
 		2E78306628DF3E00003C102B /* AuthTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E78306528DF3E00003C102B /* AuthTextField.swift */; };
 		2E78306828DF3F25003C102B /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E78306728DF3F25003C102B /* Enums.swift */; };
@@ -58,8 +57,6 @@
 		2E88749F28DF56F40012DF93 /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E88749E28DF56F40012DF93 /* LoginProtocols.swift */; };
 		2E8874A128DF57E30012DF93 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8874A028DF57E30012DF93 /* LoginInteractor.swift */; };
 		2E8874A428DF58C20012DF93 /* ApiServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8874A328DF58C20012DF93 /* ApiServiceProtocol.swift */; };
-		2E8874A728DF593A0012DF93 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2E8874A628DF593A0012DF93 /* Alamofire */; };
-		2E8874AA28DF5A640012DF93 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 2E8874A928DF5A640012DF93 /* SwiftyJSON */; };
 		2E8874AC28DF5A7E0012DF93 /* ServiceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8874AB28DF5A7E0012DF93 /* ServiceResponse.swift */; };
 		2E8874AF28DF5AAE0012DF93 /* ApiResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8874AE28DF5AAE0012DF93 /* ApiResponseError.swift */; };
 		2E8874B128DF68CC0012DF93 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8874B028DF68CC0012DF93 /* LoginPresenter.swift */; };
@@ -67,6 +64,9 @@
 		2E8874B528DF70DC0012DF93 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8874B428DF70DC0012DF93 /* ApiService.swift */; };
 		2EA6D84A28E56CE000201C10 /* BannerHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA6D84928E56CE000201C10 /* BannerHeaderView.swift */; };
 		2EB0B0B728E1D0D1008CE1E6 /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB0B0B628E1D0D1008CE1E6 /* BaseButton.swift */; };
+		2ED1344B28EAFB8500FE64DC /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2ED1344A28EAFB8500FE64DC /* SnapKit */; };
+		2ED1344E28EAFBA000FE64DC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2ED1344D28EAFBA000FE64DC /* Alamofire */; };
+		2ED1345128EAFBAD00FE64DC /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 2ED1345028EAFBAD00FE64DC /* SwiftyJSON */; };
 		2EF325F528E2C7D0003312CB /* LoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF325F428E2C7D0003312CB /* LoadingButton.swift */; };
 		2EF325FB28E2D819003312CB /* BaseLoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF325FA28E2D819003312CB /* BaseLoadingButton.swift */; };
 		2EF3260628E2FB8D003312CB /* SectionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF3260528E2FB8D003312CB /* SectionHandler.swift */; };
@@ -181,9 +181,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E8874AA28DF5A640012DF93 /* SwiftyJSON in Frameworks */,
-				2E78304628DDBBF5003C102B /* SnapKit in Frameworks */,
-				2E8874A728DF593A0012DF93 /* Alamofire in Frameworks */,
+				2ED1345128EAFBAD00FE64DC /* SwiftyJSON in Frameworks */,
+				2ED1344B28EAFB8500FE64DC /* SnapKit in Frameworks */,
+				2ED1344E28EAFBA000FE64DC /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,9 +597,9 @@
 			);
 			name = Labrand;
 			packageProductDependencies = (
-				2E78304528DDBBF5003C102B /* SnapKit */,
-				2E8874A628DF593A0012DF93 /* Alamofire */,
-				2E8874A928DF5A640012DF93 /* SwiftyJSON */,
+				2ED1344A28EAFB8500FE64DC /* SnapKit */,
+				2ED1344D28EAFBA000FE64DC /* Alamofire */,
+				2ED1345028EAFBAD00FE64DC /* SwiftyJSON */,
 			);
 			productName = Labrand;
 			productReference = 2E782FB628DC5563003C102B /* Labrand.app */;
@@ -674,10 +674,9 @@
 			);
 			mainGroup = 2E782FAD28DC5563003C102B;
 			packageReferences = (
-				2E78304428DDBBF5003C102B /* XCRemoteSwiftPackageReference "SnapKit" */,
-				2E8874A528DF593A0012DF93 /* XCRemoteSwiftPackageReference "Alamofire" */,
-				2E8874A828DF5A640012DF93 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
-				2E35174328EAEF34007D891B /* XCRemoteSwiftPackageReference "Cosmos" */,
+				2ED1344928EAFB8500FE64DC /* XCRemoteSwiftPackageReference "SnapKit" */,
+				2ED1344C28EAFBA000FE64DC /* XCRemoteSwiftPackageReference "Alamofire" */,
+				2ED1344F28EAFBAD00FE64DC /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 			);
 			productRefGroup = 2E782FB728DC5563003C102B /* Products */;
 			projectDirPath = "";
@@ -1125,23 +1124,15 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		2E35174328EAEF34007D891B /* XCRemoteSwiftPackageReference "Cosmos" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/evgenyneu/Cosmos.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 9.0.0;
-			};
-		};
-		2E78304428DDBBF5003C102B /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+		2ED1344928EAFB8500FE64DC /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
-				branch = develop;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
 			};
 		};
-		2E8874A528DF593A0012DF93 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		2ED1344C28EAFBA000FE64DC /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
@@ -1149,7 +1140,7 @@
 				minimumVersion = 5.0.0;
 			};
 		};
-		2E8874A828DF5A640012DF93 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+		2ED1344F28EAFBAD00FE64DC /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
 			requirement = {
@@ -1160,19 +1151,19 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		2E78304528DDBBF5003C102B /* SnapKit */ = {
+		2ED1344A28EAFB8500FE64DC /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2E78304428DDBBF5003C102B /* XCRemoteSwiftPackageReference "SnapKit" */;
+			package = 2ED1344928EAFB8500FE64DC /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
-		2E8874A628DF593A0012DF93 /* Alamofire */ = {
+		2ED1344D28EAFBA000FE64DC /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2E8874A528DF593A0012DF93 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = 2ED1344C28EAFBA000FE64DC /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
-		2E8874A928DF5A640012DF93 /* SwiftyJSON */ = {
+		2ED1345028EAFBAD00FE64DC /* SwiftyJSON */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2E8874A828DF5A640012DF93 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			package = 2ED1344F28EAFBAD00FE64DC /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
 			productName = SwiftyJSON;
 		};
 /* End XCSwiftPackageProductDependency section */
