@@ -15,7 +15,7 @@ class HomeInteractor {
     
     private let networkService:  ApiServiceProtocol?
     
-    //MARK: - Initization
+    //MARK: - Initialization
     init(networkService: ApiServiceProtocol) {
         self.networkService = networkService
     }

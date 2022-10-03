@@ -9,7 +9,7 @@ import UIKit
 
 class HomeConfigurator {
     
-    static func configureModel() -> HomeViewController {
+    static func configureModule() -> HomeViewController {
         
         // ViewController
         let viewController = HomeViewController()
@@ -19,7 +19,7 @@ class HomeConfigurator {
         let presenter = HomePresenter()
         
         // HomeView TableView Cells
-        let banner = BannerSectionHandler()
+        let banner = ProductsSectionHandler()
         
         // Home TableView register Cells
         let sectionHandler = [banner]

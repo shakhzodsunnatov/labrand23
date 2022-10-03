@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E35174028EAE793007D891B /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E35173F28EAE793007D891B /* ProductModel.swift */; };
+		2E35174228EAEEC1007D891B /* ProductCollectionItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E35174128EAEEC1007D891B /* ProductCollectionItemCell.swift */; };
 		2E782FBA28DC5563003C102B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E782FB928DC5563003C102B /* AppDelegate.swift */; };
 		2E782FBC28DC5563003C102B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E782FBB28DC5563003C102B /* SceneDelegate.swift */; };
 		2E782FC328DC5564003C102B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E782FC228DC5564003C102B /* Assets.xcassets */; };
@@ -63,6 +65,7 @@
 		2E8874B128DF68CC0012DF93 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8874B028DF68CC0012DF93 /* LoginPresenter.swift */; };
 		2E8874B328DF6AA90012DF93 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8874B228DF6AA90012DF93 /* LoginRouter.swift */; };
 		2E8874B528DF70DC0012DF93 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8874B428DF70DC0012DF93 /* ApiService.swift */; };
+		2EA6D84A28E56CE000201C10 /* BannerHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA6D84928E56CE000201C10 /* BannerHeaderView.swift */; };
 		2EB0B0B728E1D0D1008CE1E6 /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB0B0B628E1D0D1008CE1E6 /* BaseButton.swift */; };
 		2EF325F528E2C7D0003312CB /* LoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF325F428E2C7D0003312CB /* LoadingButton.swift */; };
 		2EF325FB28E2D819003312CB /* BaseLoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF325FA28E2D819003312CB /* BaseLoadingButton.swift */; };
@@ -76,7 +79,7 @@
 		2EF3261A28E30A45003312CB /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF3261928E30A45003312CB /* HomePresenter.swift */; };
 		2EF3261C28E30A9C003312CB /* HomeRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF3261B28E30A9C003312CB /* HomeRouting.swift */; };
 		2EF3261F28E30E6C003312CB /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF3261E28E30E6C003312CB /* TableViewCell.swift */; };
-		2EF3262128E30FEC003312CB /* BannerTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF3262028E30FEC003312CB /* BannerTableCell.swift */; };
+		2EF3262128E30FEC003312CB /* ProductsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF3262028E30FEC003312CB /* ProductsTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +100,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E35173F28EAE793007D891B /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+		2E35174128EAEEC1007D891B /* ProductCollectionItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionItemCell.swift; sourceTree = "<group>"; };
 		2E782FB628DC5563003C102B /* Labrand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Labrand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E782FB928DC5563003C102B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E782FBB28DC5563003C102B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -154,6 +159,7 @@
 		2E8874B028DF68CC0012DF93 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		2E8874B228DF6AA90012DF93 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		2E8874B428DF70DC0012DF93 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		2EA6D84928E56CE000201C10 /* BannerHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerHeaderView.swift; sourceTree = "<group>"; };
 		2EB0B0B628E1D0D1008CE1E6 /* BaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
 		2EF325F428E2C7D0003312CB /* LoadingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingButton.swift; sourceTree = "<group>"; };
 		2EF325FA28E2D819003312CB /* BaseLoadingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLoadingButton.swift; sourceTree = "<group>"; };
@@ -167,7 +173,7 @@
 		2EF3261928E30A45003312CB /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		2EF3261B28E30A9C003312CB /* HomeRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouting.swift; sourceTree = "<group>"; };
 		2EF3261E28E30E6C003312CB /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		2EF3262028E30FEC003312CB /* BannerTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerTableCell.swift; sourceTree = "<group>"; };
+		2EF3262028E30FEC003312CB /* ProductsTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsTableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -304,6 +310,7 @@
 		2E782FFD28DC6278003C102B /* Codable-Modals */ = {
 			isa = PBXGroup;
 			children = (
+				2E35173F28EAE793007D891B /* ProductModel.swift */,
 			);
 			path = "Codable-Modals";
 			sourceTree = "<group>";
@@ -559,6 +566,7 @@
 			isa = PBXGroup;
 			children = (
 				2EF3261328E30588003312CB /* HomeView.swift */,
+				2EA6D84928E56CE000201C10 /* BannerHeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -566,7 +574,8 @@
 		2EF3261D28E30DF7003312CB /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				2EF3262028E30FEC003312CB /* BannerTableCell.swift */,
+				2EF3262028E30FEC003312CB /* ProductsTableCell.swift */,
+				2E35174128EAEEC1007D891B /* ProductCollectionItemCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -668,6 +677,7 @@
 				2E78304428DDBBF5003C102B /* XCRemoteSwiftPackageReference "SnapKit" */,
 				2E8874A528DF593A0012DF93 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				2E8874A828DF5A640012DF93 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				2E35174328EAEF34007D891B /* XCRemoteSwiftPackageReference "Cosmos" */,
 			);
 			productRefGroup = 2E782FB728DC5563003C102B /* Products */;
 			projectDirPath = "";
@@ -720,14 +730,16 @@
 			files = (
 				2E78300A28DC6541003C102B /* KeyboardService.swift in Sources */,
 				2E78302728DC873F003C102B /* NSMutableAttributedString-extension.swift in Sources */,
-				2EF3262128E30FEC003312CB /* BannerTableCell.swift in Sources */,
+				2EF3262128E30FEC003312CB /* ProductsTableCell.swift in Sources */,
 				2E78303328DC88C3003C102B /* UIApplicationExtension.swift in Sources */,
 				2EF3261428E30588003312CB /* HomeView.swift in Sources */,
 				2E78302328DC8679003C102B /* UIView-extension.swift in Sources */,
+				2E35174228EAEEC1007D891B /* ProductCollectionItemCell.swift in Sources */,
 				2E78304228DDBA40003C102B /* LoaderView.swift in Sources */,
 				2E78301D28DC7FA4003C102B /* UIColor-extension.swift in Sources */,
 				2EF3260D28E2FCF9003312CB /* HomeProtocols.swift in Sources */,
 				2E78300828DC6443003C102B /* GCDUtils.swift in Sources */,
+				2E35174028EAE793007D891B /* ProductModel.swift in Sources */,
 				2E78302B28DC87CD003C102B /* Alert.swift in Sources */,
 				2EF3261C28E30A9C003312CB /* HomeRouting.swift in Sources */,
 				2E782FFB28DC5A62003C102B /* UIFont-extension.swift in Sources */,
@@ -745,6 +757,7 @@
 				2E78304828DDBC17003C102B /* CustomActivityIndicatorView.swift in Sources */,
 				2E8874A428DF58C20012DF93 /* ApiServiceProtocol.swift in Sources */,
 				2EF325F528E2C7D0003312CB /* LoadingButton.swift in Sources */,
+				2EA6D84A28E56CE000201C10 /* BannerHeaderView.swift in Sources */,
 				2E8874B128DF68CC0012DF93 /* LoginPresenter.swift in Sources */,
 				2E78303A28DD8F8C003C102B /* Button.swift in Sources */,
 				2E78300E28DC66F5003C102B /* AppService.swift in Sources */,
@@ -1112,6 +1125,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		2E35174328EAEF34007D891B /* XCRemoteSwiftPackageReference "Cosmos" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/Cosmos.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
 		2E78304428DDBBF5003C102B /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";

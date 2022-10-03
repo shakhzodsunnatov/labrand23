@@ -26,12 +26,18 @@ class HomeViewController: BaseViewController {
         super.viewWillAppear(animated)
         rootNavigation?.hideNavigationBar()
     }
-    
 }
 
 //MARK: - HomePresenterOutput
 extension HomeViewController: HomePresenterOutput {
     
+}
+
+//MARK: - Banner Check Button
+extension HomeViewController: BannerCheckButtonDelegate {
+    func checkButtonPressed() {
+        
+    }
 }
 
 //MARK: - UITableViewDelegate
@@ -47,7 +53,7 @@ extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return sectionHandlers.count
     }
-    
+
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return sectionHandlers[indexPath.row].cellHeight
     }
@@ -57,11 +63,19 @@ extension HomeViewController: UITableViewDataSource {
     }
 }
 
+//MARK: -
+extension HomeViewController: UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        superView?.headerBannerView.scrollViewDidScroll(scrollView)
+    }
+}
+
 //MARK: - SetupUI
 extension HomeViewController {
     private func setupUI() {
         self.view = superView
         superView?.tableView.delegate = self
         superView?.tableView.dataSource = self
+        superView?.headerBannerView.delegate = self
     }
 }
