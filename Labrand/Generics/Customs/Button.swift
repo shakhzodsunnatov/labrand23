@@ -55,17 +55,6 @@ class Button: UIButton {
         self.layer.cornerRadius = self.frame.size.height / 2
     }
     
-    
-    var actionClosure: () -> (Void) = {} {
-        didSet {
-            self.addTarget(self, action: #selector(buttonTapped))
-        }
-    }
-    
-    @objc func buttonTapped() {
-        self.actionClosure()
-    }
-    
     override var isSelected: Bool {
         didSet {
             backgroundColor = isSelected ? backgroundColorSelected : color
@@ -98,7 +87,7 @@ class Button: UIButton {
             if (titleColor != nil) {
                 self.setTitleColor(titleColor.withAlphaComponent(0.5), for: .highlighted)
             }
-            self.setTitleColor(UIColor.black, for: .disabled)
+            self.setTitleColor(UIColor.black0, for: .disabled)
         }
     }
     

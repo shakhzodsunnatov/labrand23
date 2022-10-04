@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E06BA5D28EC19180083C43E /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E06BA5C28EC19180083C43E /* PaddingLabel.swift */; };
+		2E06BA6028EC2AE10083C43E /* ProductsSectionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E06BA5F28EC2AE10083C43E /* ProductsSectionHandler.swift */; };
+		2E16F11128EAFDD4000184B7 /* Cosmos in Frameworks */ = {isa = PBXBuildFile; productRef = 2E16F11028EAFDD4000184B7 /* Cosmos */; };
+		2E16F11328EAFFF2000184B7 /* FavouriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E16F11228EAFFF2000184B7 /* FavouriteButton.swift */; };
 		2E35174028EAE793007D891B /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E35173F28EAE793007D891B /* ProductModel.swift */; };
 		2E35174228EAEEC1007D891B /* ProductCollectionItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E35174128EAEEC1007D891B /* ProductCollectionItemCell.swift */; };
 		2E782FBA28DC5563003C102B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E782FB928DC5563003C102B /* AppDelegate.swift */; };
@@ -100,6 +104,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E06BA5C28EC19180083C43E /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
+		2E06BA5F28EC2AE10083C43E /* ProductsSectionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsSectionHandler.swift; sourceTree = "<group>"; };
+		2E16F11228EAFFF2000184B7 /* FavouriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteButton.swift; sourceTree = "<group>"; };
 		2E35173F28EAE793007D891B /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		2E35174128EAEEC1007D891B /* ProductCollectionItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionItemCell.swift; sourceTree = "<group>"; };
 		2E782FB628DC5563003C102B /* Labrand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Labrand.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -183,6 +190,7 @@
 			files = (
 				2ED1345128EAFBAD00FE64DC /* SwiftyJSON in Frameworks */,
 				2ED1344B28EAFB8500FE64DC /* SnapKit in Frameworks */,
+				2E16F11128EAFDD4000184B7 /* Cosmos in Frameworks */,
 				2ED1344E28EAFBA000FE64DC /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,6 +212,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E06BA5E28EC2ACF0083C43E /* SectionHandles */ = {
+			isa = PBXGroup;
+			children = (
+				2E06BA5F28EC2AE10083C43E /* ProductsSectionHandler.swift */,
+			);
+			path = SectionHandles;
+			sourceTree = "<group>";
+		};
 		2E782FAD28DC5563003C102B = {
 			isa = PBXGroup;
 			children = (
@@ -358,6 +374,8 @@
 				2EB0B0B628E1D0D1008CE1E6 /* BaseButton.swift */,
 				2EF325FA28E2D819003312CB /* BaseLoadingButton.swift */,
 				2EF3261E28E30E6C003312CB /* TableViewCell.swift */,
+				2E16F11228EAFFF2000184B7 /* FavouriteButton.swift */,
+				2E06BA5C28EC19180083C43E /* PaddingLabel.swift */,
 			);
 			path = Customs;
 			sourceTree = "<group>";
@@ -545,6 +563,7 @@
 				2EF3261228E3057B003312CB /* View */,
 				2EF3260B28E2FCE8003312CB /* Configuration */,
 				2EF3261D28E30DF7003312CB /* Cell */,
+				2E06BA5E28EC2ACF0083C43E /* SectionHandles */,
 				2EF3261028E301A6003312CB /* HomeViewController.swift */,
 				2EF3261728E30909003312CB /* HomeInteractor.swift */,
 				2EF3261928E30A45003312CB /* HomePresenter.swift */,
@@ -600,6 +619,7 @@
 				2ED1344A28EAFB8500FE64DC /* SnapKit */,
 				2ED1344D28EAFBA000FE64DC /* Alamofire */,
 				2ED1345028EAFBAD00FE64DC /* SwiftyJSON */,
+				2E16F11028EAFDD4000184B7 /* Cosmos */,
 			);
 			productName = Labrand;
 			productReference = 2E782FB628DC5563003C102B /* Labrand.app */;
@@ -677,6 +697,7 @@
 				2ED1344928EAFB8500FE64DC /* XCRemoteSwiftPackageReference "SnapKit" */,
 				2ED1344C28EAFBA000FE64DC /* XCRemoteSwiftPackageReference "Alamofire" */,
 				2ED1344F28EAFBAD00FE64DC /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				2E16F10F28EAFDD4000184B7 /* XCRemoteSwiftPackageReference "Cosmos" */,
 			);
 			productRefGroup = 2E782FB728DC5563003C102B /* Products */;
 			projectDirPath = "";
@@ -735,6 +756,7 @@
 				2E78302328DC8679003C102B /* UIView-extension.swift in Sources */,
 				2E35174228EAEEC1007D891B /* ProductCollectionItemCell.swift in Sources */,
 				2E78304228DDBA40003C102B /* LoaderView.swift in Sources */,
+				2E16F11328EAFFF2000184B7 /* FavouriteButton.swift in Sources */,
 				2E78301D28DC7FA4003C102B /* UIColor-extension.swift in Sources */,
 				2EF3260D28E2FCF9003312CB /* HomeProtocols.swift in Sources */,
 				2E78300828DC6443003C102B /* GCDUtils.swift in Sources */,
@@ -762,6 +784,7 @@
 				2E78300E28DC66F5003C102B /* AppService.swift in Sources */,
 				2E78302D28DC87FB003C102B /* UIViewController+extension.swift in Sources */,
 				2E8874A128DF57E30012DF93 /* LoginInteractor.swift in Sources */,
+				2E06BA5D28EC19180083C43E /* PaddingLabel.swift in Sources */,
 				2E78301A28DC7D0E003C102B /* BaseViewController.swift in Sources */,
 				2E782FBA28DC5563003C102B /* AppDelegate.swift in Sources */,
 				2E88749F28DF56F40012DF93 /* LoginProtocols.swift in Sources */,
@@ -785,6 +808,7 @@
 				2EF3260F28E2FDDB003312CB /* HomeConfigurator.swift in Sources */,
 				2E8874B328DF6AA90012DF93 /* LoginRouter.swift in Sources */,
 				2E78300628DC636C003C102B /* AppInfo.swift in Sources */,
+				2E06BA6028EC2AE10083C43E /* ProductsSectionHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1124,6 +1148,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		2E16F10F28EAFDD4000184B7 /* XCRemoteSwiftPackageReference "Cosmos" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/Cosmos.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		2ED1344928EAFB8500FE64DC /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
@@ -1151,6 +1183,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		2E16F11028EAFDD4000184B7 /* Cosmos */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2E16F10F28EAFDD4000184B7 /* XCRemoteSwiftPackageReference "Cosmos" */;
+			productName = Cosmos;
+		};
 		2ED1344A28EAFB8500FE64DC /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 2ED1344928EAFB8500FE64DC /* XCRemoteSwiftPackageReference "SnapKit" */;

@@ -67,13 +67,13 @@ class AuthTextField: UITextField {
         self.addSubview(titleLabel)
         
         layer.cornerRadius = 4
-        layer.shadowColor = UIColor.black.withAlphaComponent(0.1).cgColor
+        layer.shadowColor = UIColor.black0.withAlphaComponent(0.1).cgColor
         layer.shadowOpacity = 1
         layer.shadowRadius = 10
         layer.shadowOffset = CGSize(width: 0, height: 0)
         
         backgroundColor = .white
-        textColor = .black
+        textColor = .black0
         attributedPlaceholder = NSAttributedString(
             string: "Place type email with @",
             attributes: [NSAttributedString.Key.foregroundColor : UIColor.gray]

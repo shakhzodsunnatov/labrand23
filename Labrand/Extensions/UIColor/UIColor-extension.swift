@@ -32,6 +32,25 @@ extension UIColor {
         self.init(red:red, green:green, blue:blue, alpha:alpha)
         // =====================================
     }
+    
+    convenience init(
+        light lightModeColor: @escaping @autoclosure () -> UIColor,
+        dark darkModeColor: @escaping @autoclosure () -> UIColor
+    ) {
+        self.init { traitCollection in
+            switch traitCollection.userInterfaceStyle {
+            case .light:
+                return lightModeColor()
+            case .dark:
+                return darkModeColor()
+            case .unspecified:
+                return lightModeColor()
+            @unknown default:
+                return lightModeColor()
+            }
+            
+        }
+    }
 }
 
 
@@ -49,8 +68,31 @@ extension UIColor {
 //MARK: QinPageView
 
 extension UIColor {
-    convenience init(r : CGFloat, g : CGFloat, b : CGFloat, alpha : CGFloat = 1.0)
-    {
+    convenience init(r : CGFloat, g : CGFloat, b : CGFloat, alpha : CGFloat = 1.0) {
         self.init(red: r / 255.0, green: g / 255.0, blue: b / 255.0, alpha: alpha)
+    }
+}
+
+//MARK: - Colors
+extension UIColor {
+    
+    class var black0: UIColor {
+        UIColor(
+            light: UIColor.black,
+            dark: UIColor.white
+        )
+    }
+    
+    class var shadowColor: UIColor {
+        UIColor(
+            light: UIColor.gray,
+            dark: UIColor.black
+        )
+    }
+    
+    class var heartBg: UIColor {
+        UIColor(
+            light: .white,
+            dark: UIColor(hexString: "#2A2C36"))
     }
 }

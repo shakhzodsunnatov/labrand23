@@ -117,7 +117,7 @@ extension String
                                                   value: 0.34,
                                                   textAligment: .left,
                                                   lineBreakMode: .byWordWrapping,
-                                                  color: UIColor.black)
+                                                  color: UIColor.black0)
         label.frame.size.width = width
         label.sizeToFit()
         
@@ -136,7 +136,7 @@ extension String
                                                   value: 0.34,
                                                   textAligment: .left,
                                                   lineBreakMode: .byWordWrapping,
-                                                  color: UIColor.black)
+                                                  color: UIColor.black0)
         label.sizeToFit()
 
 

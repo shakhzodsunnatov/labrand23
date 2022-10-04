@@ -11,6 +11,7 @@ import UIKit
 /// With this protocol we observe OpenClose principle rule
 ///
 protocol SectionHandler {
+    var products: [ProductModel] { get set }
     var cellType: UITableViewCell.Type { get }
     var cellHeight: CGFloat { get }
     func tableView( _ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell

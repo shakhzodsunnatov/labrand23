@@ -102,8 +102,8 @@ class BannerHeaderView: UIView {
             checkButton.leftAnchor.constraint(equalTo: bannerImageView.leftAnchor, constant: 10),
 
             bannerTitle.heightAnchor.constraint(equalToConstant: 100),
+            bannerTitle.widthAnchor.constraint(equalToConstant: SCREEN_WIDTH / 2),
             bannerTitle.leftAnchor.constraint(equalTo: bannerImageView.leftAnchor, constant: 15),
-            bannerTitle.rightAnchor.constraint(equalTo: bannerImageView.rightAnchor, constant: -170),
             bannerTitle.bottomAnchor.constraint(equalTo: checkButton.topAnchor, constant: -18)
         ])
     }

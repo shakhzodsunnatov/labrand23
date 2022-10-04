@@ -59,7 +59,7 @@ class LoginView: BaseView {
     private lazy var helpButton: Button = {
         let button = Button()
         button.title = "Already have an account?"
-        button.titleColor = .black
+        button.titleColor = .black0
         button.fontSize = 14
         button.image = UIImage(systemName: "arrow.right")
         button.contentMode = .scaleAspectFit

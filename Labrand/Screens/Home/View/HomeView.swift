@@ -14,6 +14,7 @@ class HomeView: BaseView {
     lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.separatorStyle = .none
+        tableView.backgroundColor = .clear
         tableView.contentInsetAdjustmentBehavior = .never
         tableView.showsVerticalScrollIndicator = false
         tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 100, right: 0)

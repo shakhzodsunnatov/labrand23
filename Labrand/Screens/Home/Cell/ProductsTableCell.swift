@@ -9,41 +9,130 @@ import UIKit
 import SnapKit
 
 class ProductsTableCell: UITableViewCell {
-
+    
     //MARK: - Properties
     
+    var productsModel: [ProductModel] = []
     var completionShowAllButton: ()-> Void = {}
     var complationDidSelectItemAt: (ProductModel?) -> Void = { _ in }
     
-    var collectionView: UICollectionView!
-    var productsModel: [ProductModel] = []
-    var titleLabel: UILabel!
-    var subTitle: UILabel!
-    var allButton: UIButton!
+    private lazy var collectionView: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
+        layout.scrollDirection = .horizontal
+        layout.minimumLineSpacing = 16
+        
+        let collection = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collection.backgroundColor = .clear
+        collection.dataSource = self
+        collection.delegate = self
+        collection.register(ProductCollectionItemCell.self, forCellWithReuseIdentifier: ProductCollectionItemCell.description())
+        collection.showsHorizontalScrollIndicator = false
+        
+        return collection
+    }()
+    private let titleLabel: UILabel = {
+        let label = UILabel()
+        label.attributedText = NSMutableAttributedString.creatAttrString(
+            text: "News",
+            font: .boldFont(ofSize: 34),
+            lineSpacing: 1.08,
+            value: 0.34,
+            textAligment: .left,
+            lineBreakMode: .byTruncatingTail,
+            color: .black0)
+        
+        return label
+    }()
+    private let subTitle: UILabel = {
+        let label = UILabel()
+        label.attributedText = NSMutableAttributedString.creatAttrString(
+            text: "Super summer sale",
+            font: .regularFont(ofSize: 13),
+            lineSpacing: 1.08,
+            value: 0.34,
+            textAligment: .left,
+            lineBreakMode: .byTruncatingTail,
+            color: .gray)
+        
+        return label
+    }()
+    private lazy var showAllButton: Button = {
+        let button = Button()
+        button.titleColor = .black0
+        button.font = .regularFont(ofSize: 13)
+        button.title = "View all"
+        button.contentHorizontalAlignment = .right
+        button.addTarget(self, action: #selector(showAllButtonPressed))
+        
+        return button
+    }()
     
-    //MARK: - Initialization
+        //MARK: - Initialization
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        self.backgroundColor = .clear
+        self.selectionStyle = .none
         
-        self.contentView.backgroundColor = .clear
-        
-//        self.titleLabel =
-//        self.allButton =
-//        self.collectionView =
+        self.setupHierarchy()
+        self.setupUI()
     }
-    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+ 
     //MARK: - Helper functions
+    func configure(products: [ProductModel]?, cellTitle: String, subTitle: String) {
+        guard let products else { return }
+        
+        self.productsModel = products
+        self.updateTextLabels(title: cellTitle, subTitle: "You’ve never seen it before!")
+        self.collectionView.reloadData()
+    }
     
     @objc private func showAllButtonPressed() {
         self.completionShowAllButton()
     }
+}
+
+//MARK: - Private
+extension ProductsTableCell {
+    
+    private func setupHierarchy() {
+        self.contentView.addSubviews(titleLabel, subTitle)
+        self.contentView.addSubview(showAllButton)
+        self.contentView.addSubview(collectionView)
+    }
+    
+    private func setupUI() {
+        
+        titleLabel.snp.makeConstraints { make in
+            make.top.equalTo(35)
+            make.left.equalTo(16)
+            let width = self.contentView.frame.size.width - 16 - 66
+            make.width.equalTo(width)
+        }
+        
+        subTitle.snp.makeConstraints { make in
+            make.top.equalTo(titleLabel.snp.bottom).offset(5)
+            make.left.equalTo(16)
+            let width = self.contentView.frame.size.width - 16 - 66
+            make.width.equalTo(width)
+        }
+        
+        showAllButton.snp.makeConstraints { make in
+            make.centerY.equalTo(titleLabel).offset(5)
+            make.right.equalTo(-16)
+            make.height.equalTo(20)
+        }
+        
+        collectionView.snp.makeConstraints { make in
+            make.top.equalTo(subTitle.snp.bottom).offset(20)
+            make.left.right.bottom.equalToSuperview()
+        }
+    }
     
     private func updateTextLabels(title: String, subTitle: String) {
-        self.allButton.setTitle("View all", for: .normal)
         
         self.titleLabel.attributedText = NSMutableAttributedString.creatAttrString(
             text: title,
@@ -52,7 +141,7 @@ class ProductsTableCell: UITableViewCell {
             value: 0.34,
             textAligment: .left,
             lineBreakMode: .byTruncatingTail,
-            color: .black)
+            color: .black0)
         
         self.subTitle.attributedText = NSMutableAttributedString.creatAttrString(
             text: title,
@@ -61,77 +150,34 @@ class ProductsTableCell: UITableViewCell {
             value: 0.34,
             textAligment: .left,
             lineBreakMode: .byTruncatingTail,
-            color: .black)
-    }
-    
-    private func setUpInit(products: [ProductModel]?, cellTitle: String) {
-        if let products {
-            self.productsModel = products
-            self.collectionView.reloadData()
-        }
-        
-        self.updateTextLabels(title: cellTitle, subTitle: "You’ve never seen it before!")
-    }
-    
-    private func createCollectionView() -> UICollectionView {
-        let layout = UICollectionViewFlowLayout()
-        
-        layout.sectionInset = UIEdgeInsets(top: 0,
-                                           left: 14,
-                                           bottom: 0,
-                                           right: 16)
-        
-        layout.estimatedItemSize = CGSize(width: 150, height: 260)
-        
-        layout.scrollDirection = .horizontal
-        layout.minimumLineSpacing = 16
-        
-        let collection = UICollectionView(frame: .zero,
-                                          collectionViewLayout: layout)
-//        collection.dataSource = self
-//        collection.delegate = self
-//        collection.register(ShopCollectionItemCell.self,
-//                            forCellWithReuseIdentifier: ShopCollectionItemCell.cellIdentifier)
-        collection.showsHorizontalScrollIndicator = false
-        collection.backgroundColor = UIColor.clear
-        
-        self.contentView.addSubview(collection)
-        
-
-        collection.snp.makeConstraints { make in
-            make.top.equalTo(self.titleLabel.snp.bottom).offset(16)
-            make.left.bottom.right.equalToSuperview()
-        }
-        
-        return collection
+            color: .gray)
     }
 }
 
-//MARK: - SetupUI
-
+//MARK: - UICollectionViewDelegate
 extension ProductsTableCell {
-    
-    
-    
-    
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("Tapped Item")
+    }
 }
 
-
-
-//MARK: - ProductsSectionHandler
-class ProductsSectionHandler: SectionHandler {
+//MARK: - UICollectionViewDataSource & UICollectionViewDelegateFlowLayout
+extension ProductsTableCell: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
-    var cellType: UITableViewCell.Type {
-        return ProductsTableCell.self
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return productsModel.count
     }
     
-    var cellHeight: CGFloat {
-        return 100
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellType.description()) as? ProductsTableCell else { return UITableViewCell() }
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ProductCollectionItemCell.description(), for: indexPath) as! ProductCollectionItemCell
+        
+        cell.configureBy(model: productsModel[indexPath.row])
+        
         return cell
     }
+    
+    func collectionView( _ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath ) -> CGSize {
+        return CGSize(width: 165, height: 260)
+    }
 }
+

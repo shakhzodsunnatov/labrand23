@@ -19,10 +19,10 @@ class HomeConfigurator {
         let presenter = HomePresenter()
         
         // HomeView TableView Cells
-        let banner = ProductsSectionHandler()
+        let newsCell = ProductsSectionHandler()
         
         // Home TableView register Cells
-        let sectionHandler = [banner]
+        let sectionHandler = [newsCell, newsCell]
         let sectionContainer = SectionContainer(handlers: sectionHandler)
         viewController.sectionContainer = sectionContainer
         view.registerCellToTableView(sectionContainer: sectionContainer)

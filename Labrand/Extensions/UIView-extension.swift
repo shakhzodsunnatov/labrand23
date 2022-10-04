@@ -9,9 +9,18 @@ import UIKit
 
 extension UIView
 {
+    func addSubviews(_ views: UIView...) {
+        views.forEach {
+            self.addSubview($0)
+        }
+    }
     
-    func bordered(lineWidth: CGFloat, strokeColor: UIColor = UIColor.gray)
-    {
+    func relayout() {
+        self.setNeedsLayout()
+        self.layoutIfNeeded()
+    }
+    
+    func bordered(lineWidth: CGFloat, strokeColor: UIColor = UIColor.gray) {
         let path = UIBezierPath.init(roundedRect: self.bounds,
                                      cornerRadius: self.frame.width/2)
         
@@ -26,10 +35,7 @@ extension UIView
         self.layer.addSublayer(borderLayer)
     }
     
-    
-    
-    func rounded(insets: UIEdgeInsets = .zero)
-    {
+    func rounded(insets: UIEdgeInsets = .zero) {
         let path = UIBezierPath.init(roundedRect: self.bounds.inset(by: insets),
                                      cornerRadius: self.frame.width/2)
         
@@ -40,11 +46,9 @@ extension UIView
         self.layer.mask = maskLayer
     }
     
-    
     func makeViewRouned(view: UIView,
                         corners: UIRectCorner,
-                        cornerRadius:Double)
-    {
+                        cornerRadius:Double) {
         let maskPath = UIBezierPath(roundedRect: self.bounds,
                                     byRoundingCorners: corners,
                                     cornerRadii: CGSize(width: cornerRadius, height: cornerRadius))
@@ -54,7 +58,6 @@ extension UIView
         
         self.layer.mask = shapeLayer
     }
-    
     
     func addTargetToView(target: Any, selector: Selector) {
         let tap = UITapGestureRecognizer(target: target, action: selector)
@@ -93,4 +96,12 @@ extension UIView {
     layer.shouldRasterize = true
     layer.rasterizationScale = scale ? UIScreen.main.scale : 1
   }
+}
+
+extension UIStackView {
+    func addArrangedSubviews(_ views: UIView...) {
+        views.forEach {
+            self.addArrangedSubview($0)
+        }
+    }
 }
