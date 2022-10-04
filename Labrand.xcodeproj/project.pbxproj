@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		2E06BA5D28EC19180083C43E /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E06BA5C28EC19180083C43E /* PaddingLabel.swift */; };
 		2E06BA6028EC2AE10083C43E /* ProductsSectionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E06BA5F28EC2AE10083C43E /* ProductsSectionHandler.swift */; };
+		2E06BA6428EC33290083C43E /* TabBarBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E06BA6328EC33290083C43E /* TabBarBadge.swift */; };
+		2E06BA6728EC33800083C43E /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E06BA6628EC33800083C43E /* TabBarItem.swift */; };
+		2E06BA6F28EC342A0083C43E /* TabBarProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E06BA6928EC342A0083C43E /* TabBarProtocols.swift */; };
+		2E06BA7028EC342A0083C43E /* TabBarConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E06BA6A28EC342A0083C43E /* TabBarConfigurator.swift */; };
+		2E06BA7128EC342A0083C43E /* TabBarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E06BA6B28EC342A0083C43E /* TabBarInteractor.swift */; };
+		2E06BA7228EC342A0083C43E /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E06BA6C28EC342A0083C43E /* TabBarViewController.swift */; };
+		2E06BA7328EC342A0083C43E /* TabBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E06BA6D28EC342A0083C43E /* TabBarRouter.swift */; };
+		2E06BA7428EC342A0083C43E /* TabBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E06BA6E28EC342A0083C43E /* TabBarPresenter.swift */; };
 		2E16F11128EAFDD4000184B7 /* Cosmos in Frameworks */ = {isa = PBXBuildFile; productRef = 2E16F11028EAFDD4000184B7 /* Cosmos */; };
 		2E16F11328EAFFF2000184B7 /* FavouriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E16F11228EAFFF2000184B7 /* FavouriteButton.swift */; };
 		2E35174028EAE793007D891B /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E35173F28EAE793007D891B /* ProductModel.swift */; };
@@ -106,6 +114,14 @@
 /* Begin PBXFileReference section */
 		2E06BA5C28EC19180083C43E /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		2E06BA5F28EC2AE10083C43E /* ProductsSectionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsSectionHandler.swift; sourceTree = "<group>"; };
+		2E06BA6328EC33290083C43E /* TabBarBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarBadge.swift; sourceTree = "<group>"; };
+		2E06BA6628EC33800083C43E /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
+		2E06BA6928EC342A0083C43E /* TabBarProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarProtocols.swift; sourceTree = "<group>"; };
+		2E06BA6A28EC342A0083C43E /* TabBarConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarConfigurator.swift; sourceTree = "<group>"; };
+		2E06BA6B28EC342A0083C43E /* TabBarInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarInteractor.swift; sourceTree = "<group>"; };
+		2E06BA6C28EC342A0083C43E /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		2E06BA6D28EC342A0083C43E /* TabBarRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarRouter.swift; sourceTree = "<group>"; };
+		2E06BA6E28EC342A0083C43E /* TabBarPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarPresenter.swift; sourceTree = "<group>"; };
 		2E16F11228EAFFF2000184B7 /* FavouriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteButton.swift; sourceTree = "<group>"; };
 		2E35173F28EAE793007D891B /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		2E35174128EAEEC1007D891B /* ProductCollectionItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionItemCell.swift; sourceTree = "<group>"; };
@@ -218,6 +234,45 @@
 				2E06BA5F28EC2AE10083C43E /* ProductsSectionHandler.swift */,
 			);
 			path = SectionHandles;
+			sourceTree = "<group>";
+		};
+		2E06BA6128EC32EA0083C43E /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				2E06BA6228EC33140083C43E /* TabBarBadge */,
+				2E06BA6528EC33770083C43E /* TabBarItem */,
+				2E06BA6828EC342A0083C43E /* Configuration */,
+				2E06BA6B28EC342A0083C43E /* TabBarInteractor.swift */,
+				2E06BA6E28EC342A0083C43E /* TabBarPresenter.swift */,
+				2E06BA6D28EC342A0083C43E /* TabBarRouter.swift */,
+				2E06BA6C28EC342A0083C43E /* TabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		2E06BA6228EC33140083C43E /* TabBarBadge */ = {
+			isa = PBXGroup;
+			children = (
+				2E06BA6328EC33290083C43E /* TabBarBadge.swift */,
+			);
+			path = TabBarBadge;
+			sourceTree = "<group>";
+		};
+		2E06BA6528EC33770083C43E /* TabBarItem */ = {
+			isa = PBXGroup;
+			children = (
+				2E06BA6628EC33800083C43E /* TabBarItem.swift */,
+			);
+			path = TabBarItem;
+			sourceTree = "<group>";
+		};
+		2E06BA6828EC342A0083C43E /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				2E06BA6928EC342A0083C43E /* TabBarProtocols.swift */,
+				2E06BA6A28EC342A0083C43E /* TabBarConfigurator.swift */,
+			);
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 		2E782FAD28DC5563003C102B = {
@@ -430,6 +485,7 @@
 			children = (
 				2E78303528DD8E48003C102B /* Auth */,
 				2EF3260A28E2FCC1003312CB /* Home */,
+				2E06BA6128EC32EA0083C43E /* TabBar */,
 				2E78301828DC7CF7003C102B /* Base */,
 			);
 			path = Screens;
@@ -759,6 +815,7 @@
 				2E16F11328EAFFF2000184B7 /* FavouriteButton.swift in Sources */,
 				2E78301D28DC7FA4003C102B /* UIColor-extension.swift in Sources */,
 				2EF3260D28E2FCF9003312CB /* HomeProtocols.swift in Sources */,
+				2E06BA7028EC342A0083C43E /* TabBarConfigurator.swift in Sources */,
 				2E78300828DC6443003C102B /* GCDUtils.swift in Sources */,
 				2E35174028EAE793007D891B /* ProductModel.swift in Sources */,
 				2E78302B28DC87CD003C102B /* Alert.swift in Sources */,
@@ -781,11 +838,15 @@
 				2EA6D84A28E56CE000201C10 /* BannerHeaderView.swift in Sources */,
 				2E8874B128DF68CC0012DF93 /* LoginPresenter.swift in Sources */,
 				2E78303A28DD8F8C003C102B /* Button.swift in Sources */,
+				2E06BA7328EC342A0083C43E /* TabBarRouter.swift in Sources */,
+				2E06BA6F28EC342A0083C43E /* TabBarProtocols.swift in Sources */,
 				2E78300E28DC66F5003C102B /* AppService.swift in Sources */,
 				2E78302D28DC87FB003C102B /* UIViewController+extension.swift in Sources */,
+				2E06BA6428EC33290083C43E /* TabBarBadge.swift in Sources */,
 				2E8874A128DF57E30012DF93 /* LoginInteractor.swift in Sources */,
 				2E06BA5D28EC19180083C43E /* PaddingLabel.swift in Sources */,
 				2E78301A28DC7D0E003C102B /* BaseViewController.swift in Sources */,
+				2E06BA6728EC33800083C43E /* TabBarItem.swift in Sources */,
 				2E782FBA28DC5563003C102B /* AppDelegate.swift in Sources */,
 				2E88749F28DF56F40012DF93 /* LoginProtocols.swift in Sources */,
 				2EF3261828E30909003312CB /* HomeInteractor.swift in Sources */,
@@ -796,10 +857,12 @@
 				2EF3261F28E30E6C003312CB /* TableViewCell.swift in Sources */,
 				2EF3260628E2FB8D003312CB /* SectionHandler.swift in Sources */,
 				2E782FBC28DC5563003C102B /* SceneDelegate.swift in Sources */,
+				2E06BA7428EC342A0083C43E /* TabBarPresenter.swift in Sources */,
 				2E78301128DC6769003C102B /* Constant.swift in Sources */,
 				2E8874AF28DF5AAE0012DF93 /* ApiResponseError.swift in Sources */,
 				2E78300128DC6314003C102B /* UIColor.swift in Sources */,
 				2EF3261128E301A6003312CB /* HomeViewController.swift in Sources */,
+				2E06BA7128EC342A0083C43E /* TabBarInteractor.swift in Sources */,
 				2E88749D28DF56860012DF93 /* LoginConfigurator.swift in Sources */,
 				2E78301628DC6936003C102B /* LaunchScreenViewController.swift in Sources */,
 				2E8874B528DF70DC0012DF93 /* ApiService.swift in Sources */,
@@ -807,6 +870,7 @@
 				2EF3260928E2FC2D003312CB /* SectionContainer.swift in Sources */,
 				2EF3260F28E2FDDB003312CB /* HomeConfigurator.swift in Sources */,
 				2E8874B328DF6AA90012DF93 /* LoginRouter.swift in Sources */,
+				2E06BA7228EC342A0083C43E /* TabBarViewController.swift in Sources */,
 				2E78300628DC636C003C102B /* AppInfo.swift in Sources */,
 				2E06BA6028EC2AE10083C43E /* ProductsSectionHandler.swift in Sources */,
 			);
