@@ -11,7 +11,6 @@ import SnapKit
 class TableViewCell: UITableViewCell {
     
     //MARK: - Properties
-    var containerView = UIView()
     
     //MARK: - Initialization
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -21,9 +20,6 @@ class TableViewCell: UITableViewCell {
         selectionStyle = .none
         backgroundColor = .clear
         
-        // Setup containerView
-        contentView.addSubview(containerView)
-        
         // Setup Custom Views
         setupUI()
     }
@@ -32,14 +28,6 @@ class TableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        containerView.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
-        }
-    }
-    
     //MARK: - Publice
     func setupUI() {}
-    
 }

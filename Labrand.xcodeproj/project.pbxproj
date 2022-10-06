@@ -17,10 +17,22 @@
 		2E06BA7228EC342A0083C43E /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E06BA6C28EC342A0083C43E /* TabBarViewController.swift */; };
 		2E06BA7328EC342A0083C43E /* TabBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E06BA6D28EC342A0083C43E /* TabBarRouter.swift */; };
 		2E06BA7428EC342A0083C43E /* TabBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E06BA6E28EC342A0083C43E /* TabBarPresenter.swift */; };
+		2E06BAD528EC5D8D0083C43E /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E06BAD428EC5D8D0083C43E /* ShopView.swift */; };
+		2E06BADA28EC5D9E0083C43E /* ShopPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E06BAD828EC5D9E0083C43E /* ShopPresenter.swift */; };
+		2E06BADB28EC5D9E0083C43E /* ShopRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E06BAD928EC5D9E0083C43E /* ShopRouting.swift */; };
+		2E06BADC28EC5D9E0083C43E /* ShopInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E06BAD728EC5D9E0083C43E /* ShopInteractor.swift */; };
+		2E06BADD28EC5D9E0083C43E /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E06BAD628EC5D9E0083C43E /* ShopViewController.swift */; };
+		2E06BAE028EC5DA80083C43E /* ShopProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E06BADE28EC5DA80083C43E /* ShopProtocols.swift */; };
+		2E06BAE128EC5DA80083C43E /* ShopConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E06BADF28EC5DA80083C43E /* ShopConfigurator.swift */; };
+		2E06BAE328EC5F030083C43E /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E06BAE228EC5F030083C43E /* CustomSegmentedControl.swift */; };
+		2E06BAE528EC62970083C43E /* UIViewController+BarButtonAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E06BAE428EC62970083C43E /* UIViewController+BarButtonAdditions.swift */; };
+		2E06BAE728EC63280083C43E /* UIViewController+Additional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E06BAE628EC63280083C43E /* UIViewController+Additional.swift */; };
 		2E16F11128EAFDD4000184B7 /* Cosmos in Frameworks */ = {isa = PBXBuildFile; productRef = 2E16F11028EAFDD4000184B7 /* Cosmos */; };
 		2E16F11328EAFFF2000184B7 /* FavouriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E16F11228EAFFF2000184B7 /* FavouriteButton.swift */; };
 		2E35174028EAE793007D891B /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E35173F28EAE793007D891B /* ProductModel.swift */; };
 		2E35174228EAEEC1007D891B /* ProductCollectionItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E35174128EAEEC1007D891B /* ProductCollectionItemCell.swift */; };
+		2E5E717B28EEFFE50029B481 /* UIScrollView-extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E717A28EEFFE50029B481 /* UIScrollView-extension.swift */; };
+		2E5E717D28EF04680029B481 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E717C28EF04680029B481 /* TestViewController.swift */; };
 		2E782FBA28DC5563003C102B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E782FB928DC5563003C102B /* AppDelegate.swift */; };
 		2E782FBC28DC5563003C102B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E782FBB28DC5563003C102B /* SceneDelegate.swift */; };
 		2E782FC328DC5564003C102B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E782FC228DC5564003C102B /* Assets.xcassets */; };
@@ -92,6 +104,8 @@
 		2EF3261C28E30A9C003312CB /* HomeRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF3261B28E30A9C003312CB /* HomeRouting.swift */; };
 		2EF3261F28E30E6C003312CB /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF3261E28E30E6C003312CB /* TableViewCell.swift */; };
 		2EF3262128E30FEC003312CB /* ProductsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF3262028E30FEC003312CB /* ProductsTableCell.swift */; };
+		2EF5723A28ED87FE00D63B23 /* SaleTabeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF5723928ED87FE00D63B23 /* SaleTabeCell.swift */; };
+		2EF5723C28ED8A8800D63B23 /* CategoryTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF5723B28ED8A8800D63B23 /* CategoryTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,9 +136,21 @@
 		2E06BA6C28EC342A0083C43E /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		2E06BA6D28EC342A0083C43E /* TabBarRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarRouter.swift; sourceTree = "<group>"; };
 		2E06BA6E28EC342A0083C43E /* TabBarPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarPresenter.swift; sourceTree = "<group>"; };
+		2E06BAD428EC5D8D0083C43E /* ShopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
+		2E06BAD628EC5D9E0083C43E /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		2E06BAD728EC5D9E0083C43E /* ShopInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopInteractor.swift; sourceTree = "<group>"; };
+		2E06BAD828EC5D9E0083C43E /* ShopPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopPresenter.swift; sourceTree = "<group>"; };
+		2E06BAD928EC5D9E0083C43E /* ShopRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopRouting.swift; sourceTree = "<group>"; };
+		2E06BADE28EC5DA80083C43E /* ShopProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopProtocols.swift; sourceTree = "<group>"; };
+		2E06BADF28EC5DA80083C43E /* ShopConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopConfigurator.swift; sourceTree = "<group>"; };
+		2E06BAE228EC5F030083C43E /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
+		2E06BAE428EC62970083C43E /* UIViewController+BarButtonAdditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+BarButtonAdditions.swift"; sourceTree = "<group>"; };
+		2E06BAE628EC63280083C43E /* UIViewController+Additional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Additional.swift"; sourceTree = "<group>"; };
 		2E16F11228EAFFF2000184B7 /* FavouriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteButton.swift; sourceTree = "<group>"; };
 		2E35173F28EAE793007D891B /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		2E35174128EAEEC1007D891B /* ProductCollectionItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionItemCell.swift; sourceTree = "<group>"; };
+		2E5E717A28EEFFE50029B481 /* UIScrollView-extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView-extension.swift"; sourceTree = "<group>"; };
+		2E5E717C28EF04680029B481 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		2E782FB628DC5563003C102B /* Labrand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Labrand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E782FB928DC5563003C102B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E782FBB28DC5563003C102B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -197,6 +223,8 @@
 		2EF3261B28E30A9C003312CB /* HomeRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouting.swift; sourceTree = "<group>"; };
 		2EF3261E28E30E6C003312CB /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		2EF3262028E30FEC003312CB /* ProductsTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsTableCell.swift; sourceTree = "<group>"; };
+		2EF5723928ED87FE00D63B23 /* SaleTabeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaleTabeCell.swift; sourceTree = "<group>"; };
+		2EF5723B28ED8A8800D63B23 /* CategoryTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -273,6 +301,38 @@
 				2E06BA6A28EC342A0083C43E /* TabBarConfigurator.swift */,
 			);
 			path = Configuration;
+			sourceTree = "<group>";
+		};
+		2E06BAD128EC5D6F0083C43E /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				2E06BAD328EC5D7F0083C43E /* View */,
+				2E06BAD228EC5D770083C43E /* Configuration */,
+				2EF5723828ED87DB00D63B23 /* Cell */,
+				2E06BAD728EC5D9E0083C43E /* ShopInteractor.swift */,
+				2E06BAD828EC5D9E0083C43E /* ShopPresenter.swift */,
+				2E06BAD928EC5D9E0083C43E /* ShopRouting.swift */,
+				2E06BAD628EC5D9E0083C43E /* ShopViewController.swift */,
+				2E5E717C28EF04680029B481 /* TestViewController.swift */,
+			);
+			path = Shop;
+			sourceTree = "<group>";
+		};
+		2E06BAD228EC5D770083C43E /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				2E06BADF28EC5DA80083C43E /* ShopConfigurator.swift */,
+				2E06BADE28EC5DA80083C43E /* ShopProtocols.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		2E06BAD328EC5D7F0083C43E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2E06BAD428EC5D8D0083C43E /* ShopView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		2E782FAD28DC5563003C102B = {
@@ -366,6 +426,9 @@
 				2E78303028DC886A003C102B /* UITextField-extension.swift */,
 				2E78303228DC88C3003C102B /* UIApplicationExtension.swift */,
 				2E78303B28DD8FED003C102B /* UIButton-extension.swift */,
+				2E06BAE428EC62970083C43E /* UIViewController+BarButtonAdditions.swift */,
+				2E06BAE628EC63280083C43E /* UIViewController+Additional.swift */,
+				2E5E717A28EEFFE50029B481 /* UIScrollView-extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -431,6 +494,7 @@
 				2EF3261E28E30E6C003312CB /* TableViewCell.swift */,
 				2E16F11228EAFFF2000184B7 /* FavouriteButton.swift */,
 				2E06BA5C28EC19180083C43E /* PaddingLabel.swift */,
+				2E06BAE228EC5F030083C43E /* CustomSegmentedControl.swift */,
 			);
 			path = Customs;
 			sourceTree = "<group>";
@@ -483,6 +547,7 @@
 		2E78301728DC6DCF003C102B /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				2E06BAD128EC5D6F0083C43E /* Shop */,
 				2E78303528DD8E48003C102B /* Auth */,
 				2EF3260A28E2FCC1003312CB /* Home */,
 				2E06BA6128EC32EA0083C43E /* TabBar */,
@@ -655,6 +720,15 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		2EF5723828ED87DB00D63B23 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2EF5723928ED87FE00D63B23 /* SaleTabeCell.swift */,
+				2EF5723B28ED8A8800D63B23 /* CategoryTableCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -811,6 +885,7 @@
 				2EF3261428E30588003312CB /* HomeView.swift in Sources */,
 				2E78302328DC8679003C102B /* UIView-extension.swift in Sources */,
 				2E35174228EAEEC1007D891B /* ProductCollectionItemCell.swift in Sources */,
+				2E06BAE328EC5F030083C43E /* CustomSegmentedControl.swift in Sources */,
 				2E78304228DDBA40003C102B /* LoaderView.swift in Sources */,
 				2E16F11328EAFFF2000184B7 /* FavouriteButton.swift in Sources */,
 				2E78301D28DC7FA4003C102B /* UIColor-extension.swift in Sources */,
@@ -820,28 +895,37 @@
 				2E35174028EAE793007D891B /* ProductModel.swift in Sources */,
 				2E78302B28DC87CD003C102B /* Alert.swift in Sources */,
 				2EF3261C28E30A9C003312CB /* HomeRouting.swift in Sources */,
+				2E5E717B28EEFFE50029B481 /* UIScrollView-extension.swift in Sources */,
 				2E782FFB28DC5A62003C102B /* UIFont-extension.swift in Sources */,
 				2E78303128DC886A003C102B /* UITextField-extension.swift in Sources */,
 				2EB0B0B728E1D0D1008CE1E6 /* BaseButton.swift in Sources */,
 				2E78302528DC8702003C102B /* UITableViewCell-extension.swift in Sources */,
 				2E78300328DC632E003C102B /* AssetColors.swift in Sources */,
 				2E88749A28DF55C60012DF93 /* LoginViewController.swift in Sources */,
+				2E06BAE128EC5DA80083C43E /* ShopConfigurator.swift in Sources */,
+				2E06BAE528EC62970083C43E /* UIViewController+BarButtonAdditions.swift in Sources */,
 				2E78304028DDBA27003C102B /* BaseView.swift in Sources */,
 				2E78303C28DD8FED003C102B /* UIButton-extension.swift in Sources */,
 				2E78306628DF3E00003C102B /* AuthTextField.swift in Sources */,
 				2E78302928DC8793003C102B /* String+extension.swift in Sources */,
 				2E78302128DC848C003C102B /* BaseNavigationController.swift in Sources */,
+				2EF5723A28ED87FE00D63B23 /* SaleTabeCell.swift in Sources */,
+				2E06BAE728EC63280083C43E /* UIViewController+Additional.swift in Sources */,
 				2E78302F28DC882F003C102B /* TabBarController-extension.swift in Sources */,
 				2E78304828DDBC17003C102B /* CustomActivityIndicatorView.swift in Sources */,
 				2E8874A428DF58C20012DF93 /* ApiServiceProtocol.swift in Sources */,
 				2EF325F528E2C7D0003312CB /* LoadingButton.swift in Sources */,
 				2EA6D84A28E56CE000201C10 /* BannerHeaderView.swift in Sources */,
 				2E8874B128DF68CC0012DF93 /* LoginPresenter.swift in Sources */,
+				2EF5723C28ED8A8800D63B23 /* CategoryTableCell.swift in Sources */,
 				2E78303A28DD8F8C003C102B /* Button.swift in Sources */,
 				2E06BA7328EC342A0083C43E /* TabBarRouter.swift in Sources */,
 				2E06BA6F28EC342A0083C43E /* TabBarProtocols.swift in Sources */,
+				2E06BADD28EC5D9E0083C43E /* ShopViewController.swift in Sources */,
 				2E78300E28DC66F5003C102B /* AppService.swift in Sources */,
+				2E06BADC28EC5D9E0083C43E /* ShopInteractor.swift in Sources */,
 				2E78302D28DC87FB003C102B /* UIViewController+extension.swift in Sources */,
+				2E06BADA28EC5D9E0083C43E /* ShopPresenter.swift in Sources */,
 				2E06BA6428EC33290083C43E /* TabBarBadge.swift in Sources */,
 				2E8874A128DF57E30012DF93 /* LoginInteractor.swift in Sources */,
 				2E06BA5D28EC19180083C43E /* PaddingLabel.swift in Sources */,
@@ -849,6 +933,7 @@
 				2E06BA6728EC33800083C43E /* TabBarItem.swift in Sources */,
 				2E782FBA28DC5563003C102B /* AppDelegate.swift in Sources */,
 				2E88749F28DF56F40012DF93 /* LoginProtocols.swift in Sources */,
+				2E06BAE028EC5DA80083C43E /* ShopProtocols.swift in Sources */,
 				2EF3261828E30909003312CB /* HomeInteractor.swift in Sources */,
 				2EF325FB28E2D819003312CB /* BaseLoadingButton.swift in Sources */,
 				2EF3261A28E30A45003312CB /* HomePresenter.swift in Sources */,
@@ -862,14 +947,17 @@
 				2E8874AF28DF5AAE0012DF93 /* ApiResponseError.swift in Sources */,
 				2E78300128DC6314003C102B /* UIColor.swift in Sources */,
 				2EF3261128E301A6003312CB /* HomeViewController.swift in Sources */,
+				2E06BAD528EC5D8D0083C43E /* ShopView.swift in Sources */,
 				2E06BA7128EC342A0083C43E /* TabBarInteractor.swift in Sources */,
 				2E88749D28DF56860012DF93 /* LoginConfigurator.swift in Sources */,
+				2E06BADB28EC5D9E0083C43E /* ShopRouting.swift in Sources */,
 				2E78301628DC6936003C102B /* LaunchScreenViewController.swift in Sources */,
 				2E8874B528DF70DC0012DF93 /* ApiService.swift in Sources */,
 				2E78306828DF3F25003C102B /* Enums.swift in Sources */,
 				2EF3260928E2FC2D003312CB /* SectionContainer.swift in Sources */,
 				2EF3260F28E2FDDB003312CB /* HomeConfigurator.swift in Sources */,
 				2E8874B328DF6AA90012DF93 /* LoginRouter.swift in Sources */,
+				2E5E717D28EF04680029B481 /* TestViewController.swift in Sources */,
 				2E06BA7228EC342A0083C43E /* TabBarViewController.swift in Sources */,
 				2E78300628DC636C003C102B /* AppInfo.swift in Sources */,
 				2E06BA6028EC2AE10083C43E /* ProductsSectionHandler.swift in Sources */,

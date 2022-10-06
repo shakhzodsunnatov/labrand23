@@ -75,11 +75,24 @@ extension UIColor {
 
 //MARK: - Colors
 extension UIColor {
-    
+    // 0 -> changeable Color
     class var black0: UIColor {
         UIColor(
             light: UIColor.black,
             dark: UIColor.white
+        )
+    }
+    
+    class var whiteAssetBg: UIColor {
+        UIColor(
+            light: .white,
+            dark: .appColor(.viewBackground))
+    }
+    
+    class var grayBlack0: UIColor {
+        UIColor(
+            light: .black,
+            dark: .gray
         )
     }
     

@@ -10,4 +10,6 @@ import Foundation
 enum AssetColors: String {
     case viewBackground
     case redPrimary
+    case saleRed
+    case darkBlueWhite
 }

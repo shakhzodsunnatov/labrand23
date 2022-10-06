@@ -44,7 +44,7 @@ class BannerHeaderView: UIView {
         button.titleColor = .white
         button.font = .regularFont(ofSize: 18)
         button.title = "Check"
-        button.color = .appColor(.redPrimary)
+        button.color = .appColor(.saleRed)
         button.addTarget(self, action: #selector(pressedButton))
         
         return button

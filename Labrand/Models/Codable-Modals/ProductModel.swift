@@ -7,6 +7,7 @@
 
 
 import Foundation
+import UIKit
 
 struct ProductModel: Codable {
     var title: String!
@@ -26,6 +27,15 @@ struct ProductModel: Codable {
     }
 }
 
+struct CategoryModel {
+    var name: String?
+    var image: UIImage?
+    
+    init(name: String? , image: UIImage? ) {
+        self.name = name
+        self.image = image
+    }
+}
 
 class MockData {
     
@@ -66,5 +76,11 @@ class MockData {
         product,
         product
     ]
+    
+    let shopCategories: [CategoryModel] = [
+        CategoryModel(name: "New", image: UIImage(named: "cat2")),
+        CategoryModel(name: "Clothes", image: UIImage(named: "cat3")),
+        CategoryModel(name: "Shoes", image: UIImage(named: "cat0")),
+        CategoryModel(name: "Accesories", image: UIImage(named: "cat1")) ]
     
 }
