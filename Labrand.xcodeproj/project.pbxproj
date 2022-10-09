@@ -86,6 +86,13 @@
 		2E8874B128DF68CC0012DF93 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8874B028DF68CC0012DF93 /* LoginPresenter.swift */; };
 		2E8874B328DF6AA90012DF93 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8874B228DF6AA90012DF93 /* LoginRouter.swift */; };
 		2E8874B528DF70DC0012DF93 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8874B428DF70DC0012DF93 /* ApiService.swift */; };
+		2EA38C8628F2C4EE002CA93A /* CategoriesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA38C8228F2C4EE002CA93A /* CategoriesPresenter.swift */; };
+		2EA38C8728F2C4EE002CA93A /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA38C8328F2C4EE002CA93A /* CategoriesViewController.swift */; };
+		2EA38C8828F2C4EE002CA93A /* CategoriesRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA38C8428F2C4EE002CA93A /* CategoriesRouting.swift */; };
+		2EA38C8928F2C4EE002CA93A /* CategoriesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA38C8528F2C4EE002CA93A /* CategoriesInteractor.swift */; };
+		2EA38C8E28F2C507002CA93A /* CategoriesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA38C8C28F2C507002CA93A /* CategoriesProtocols.swift */; };
+		2EA38C8F28F2C507002CA93A /* CategoriesConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA38C8D28F2C507002CA93A /* CategoriesConfigurator.swift */; };
+		2EA38C9128F2C50E002CA93A /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA38C9028F2C50E002CA93A /* CategoriesView.swift */; };
 		2EA6D84A28E56CE000201C10 /* BannerHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA6D84928E56CE000201C10 /* BannerHeaderView.swift */; };
 		2EB0B0B728E1D0D1008CE1E6 /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB0B0B628E1D0D1008CE1E6 /* BaseButton.swift */; };
 		2ED1344B28EAFB8500FE64DC /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2ED1344A28EAFB8500FE64DC /* SnapKit */; };
@@ -208,6 +215,13 @@
 		2E8874B028DF68CC0012DF93 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		2E8874B228DF6AA90012DF93 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		2E8874B428DF70DC0012DF93 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		2EA38C8228F2C4EE002CA93A /* CategoriesPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesPresenter.swift; sourceTree = "<group>"; };
+		2EA38C8328F2C4EE002CA93A /* CategoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
+		2EA38C8428F2C4EE002CA93A /* CategoriesRouting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesRouting.swift; sourceTree = "<group>"; };
+		2EA38C8528F2C4EE002CA93A /* CategoriesInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesInteractor.swift; sourceTree = "<group>"; };
+		2EA38C8C28F2C507002CA93A /* CategoriesProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesProtocols.swift; sourceTree = "<group>"; };
+		2EA38C8D28F2C507002CA93A /* CategoriesConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesConfigurator.swift; sourceTree = "<group>"; };
+		2EA38C9028F2C50E002CA93A /* CategoriesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
 		2EA6D84928E56CE000201C10 /* BannerHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerHeaderView.swift; sourceTree = "<group>"; };
 		2EB0B0B628E1D0D1008CE1E6 /* BaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
 		2EF325F428E2C7D0003312CB /* LoadingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingButton.swift; sourceTree = "<group>"; };
@@ -548,6 +562,7 @@
 			isa = PBXGroup;
 			children = (
 				2E06BAD128EC5D6F0083C43E /* Shop */,
+				2EA38C8128F2C4E3002CA93A /* Categories */,
 				2E78303528DD8E48003C102B /* Auth */,
 				2EF3260A28E2FCC1003312CB /* Home */,
 				2E06BA6128EC32EA0083C43E /* TabBar */,
@@ -647,6 +662,36 @@
 				2E8874AE28DF5AAE0012DF93 /* ApiResponseError.swift */,
 			);
 			path = ApiResponseError;
+			sourceTree = "<group>";
+		};
+		2EA38C8128F2C4E3002CA93A /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				2EA38C8B28F2C4FB002CA93A /* View */,
+				2EA38C8A28F2C4F6002CA93A /* Configuration */,
+				2EA38C8528F2C4EE002CA93A /* CategoriesInteractor.swift */,
+				2EA38C8228F2C4EE002CA93A /* CategoriesPresenter.swift */,
+				2EA38C8428F2C4EE002CA93A /* CategoriesRouting.swift */,
+				2EA38C8328F2C4EE002CA93A /* CategoriesViewController.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		2EA38C8A28F2C4F6002CA93A /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				2EA38C8D28F2C507002CA93A /* CategoriesConfigurator.swift */,
+				2EA38C8C28F2C507002CA93A /* CategoriesProtocols.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		2EA38C8B28F2C4FB002CA93A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2EA38C9028F2C50E002CA93A /* CategoriesView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		2EF325F328E2C7AC003312CB /* Libraries */ = {
@@ -906,6 +951,7 @@
 				2E06BAE528EC62970083C43E /* UIViewController+BarButtonAdditions.swift in Sources */,
 				2E78304028DDBA27003C102B /* BaseView.swift in Sources */,
 				2E78303C28DD8FED003C102B /* UIButton-extension.swift in Sources */,
+				2EA38C8828F2C4EE002CA93A /* CategoriesRouting.swift in Sources */,
 				2E78306628DF3E00003C102B /* AuthTextField.swift in Sources */,
 				2E78302928DC8793003C102B /* String+extension.swift in Sources */,
 				2E78302128DC848C003C102B /* BaseNavigationController.swift in Sources */,
@@ -917,10 +963,12 @@
 				2EF325F528E2C7D0003312CB /* LoadingButton.swift in Sources */,
 				2EA6D84A28E56CE000201C10 /* BannerHeaderView.swift in Sources */,
 				2E8874B128DF68CC0012DF93 /* LoginPresenter.swift in Sources */,
+				2EA38C8728F2C4EE002CA93A /* CategoriesViewController.swift in Sources */,
 				2EF5723C28ED8A8800D63B23 /* CategoryTableCell.swift in Sources */,
 				2E78303A28DD8F8C003C102B /* Button.swift in Sources */,
 				2E06BA7328EC342A0083C43E /* TabBarRouter.swift in Sources */,
 				2E06BA6F28EC342A0083C43E /* TabBarProtocols.swift in Sources */,
+				2EA38C8F28F2C507002CA93A /* CategoriesConfigurator.swift in Sources */,
 				2E06BADD28EC5D9E0083C43E /* ShopViewController.swift in Sources */,
 				2E78300E28DC66F5003C102B /* AppService.swift in Sources */,
 				2E06BADC28EC5D9E0083C43E /* ShopInteractor.swift in Sources */,
@@ -930,8 +978,10 @@
 				2E8874A128DF57E30012DF93 /* LoginInteractor.swift in Sources */,
 				2E06BA5D28EC19180083C43E /* PaddingLabel.swift in Sources */,
 				2E78301A28DC7D0E003C102B /* BaseViewController.swift in Sources */,
+				2EA38C8928F2C4EE002CA93A /* CategoriesInteractor.swift in Sources */,
 				2E06BA6728EC33800083C43E /* TabBarItem.swift in Sources */,
 				2E782FBA28DC5563003C102B /* AppDelegate.swift in Sources */,
+				2EA38C8628F2C4EE002CA93A /* CategoriesPresenter.swift in Sources */,
 				2E88749F28DF56F40012DF93 /* LoginProtocols.swift in Sources */,
 				2E06BAE028EC5DA80083C43E /* ShopProtocols.swift in Sources */,
 				2EF3261828E30909003312CB /* HomeInteractor.swift in Sources */,
@@ -941,10 +991,12 @@
 				2E78303E28DD95B7003C102B /* LoginView.swift in Sources */,
 				2EF3261F28E30E6C003312CB /* TableViewCell.swift in Sources */,
 				2EF3260628E2FB8D003312CB /* SectionHandler.swift in Sources */,
+				2EA38C9128F2C50E002CA93A /* CategoriesView.swift in Sources */,
 				2E782FBC28DC5563003C102B /* SceneDelegate.swift in Sources */,
 				2E06BA7428EC342A0083C43E /* TabBarPresenter.swift in Sources */,
 				2E78301128DC6769003C102B /* Constant.swift in Sources */,
 				2E8874AF28DF5AAE0012DF93 /* ApiResponseError.swift in Sources */,
+				2EA38C8E28F2C507002CA93A /* CategoriesProtocols.swift in Sources */,
 				2E78300128DC6314003C102B /* UIColor.swift in Sources */,
 				2EF3261128E301A6003312CB /* HomeViewController.swift in Sources */,
 				2E06BAD528EC5D8D0083C43E /* ShopView.swift in Sources */,

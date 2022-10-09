@@ -45,8 +45,10 @@ extension ShopViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath)
         cell?.showAnimation { [weak self] in
-////            let vc = self?.addChildViewController(withChildViewController: HomeConfigurator.configureModule())
-//            self?.cycleFromViewController(oldViewController: TestViewController(), toViewController: HomeConfigurator.configureModule())
+            
+            let vc = CategoriesConfigurator.configureModule()
+            self?.pushViewController(vc)
+            
         }
     }
 }
@@ -82,48 +84,4 @@ extension ShopViewController {
         self.superView?.tableView.dataSource = self
         self.title = "Categories"
     }
-
-//    func cycleFromViewController(oldViewController: UIViewController, toViewController newViewController: UIViewController) {
-//        oldViewController.willMove(toParent: nil)
-//        newViewController.view.translatesAutoresizingMaskIntoConstraints = false
-//
-//        self.addChild(newViewController)
-//        self.addSubview(subView: newViewController.view, toView: self.view)
-//
-////        newViewController.view.alpha = 0
-////        newViewController.view.layoutIfNeeded()
-//
-//        UIView.animate(withDuration: 0.5, delay: 0.1, options: .transitionFlipFromLeft, animations: {
-////            newViewController.view.alpha = 1
-////            oldViewController.view.alpha = 0
-//        }) { (finished) in
-//            oldViewController.view.removeFromSuperview()
-//            oldViewController.removeFromParent()
-//            newViewController.didMove(toParent: self)
-//        }
-//    }
-//
-//    private func addSubview(subView:UIView, toView parentView:UIView) {
-//           self.view.layoutIfNeeded()
-//           parentView.addSubview(subView)
-//
-//           subView.leadingAnchor.constraint(equalTo: parentView.leadingAnchor).isActive = true
-//           subView.topAnchor.constraint(equalTo: parentView.topAnchor).isActive = true
-//           subView.bottomAnchor.constraint(equalTo: parentView.bottomAnchor).isActive = true
-//           subView.trailingAnchor.constraint(equalTo: parentView.trailingAnchor).isActive  = true
-//       }
-//
-//    func addChildViewController(withChildViewController childViewController: UIViewController) -> UIViewController {
-//        // Add Child View Controller
-//        addChild(childViewController)
-//        childViewController.beginAppearanceTransition(true, animated: true)
-//        // Add Child View as Subview
-//        view.addSubview(childViewController.view)
-//        // Configure Child View
-//        childViewController.view.frame = view.bounds
-//        childViewController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-//        // Notify Child View Controller
-//        childViewController.didMove(toParent: self)
-//        return childViewController
-//    }
 }
