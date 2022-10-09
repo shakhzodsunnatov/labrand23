@@ -61,8 +61,7 @@ class CategoryTableCell: TableViewCell {
         
         clothesImageView.snp.makeConstraints { make in
             make.top.bottom.equalToSuperview()
-            make.right.equalToSuperview().offset(2)
-            make.width.equalTo((containerView.frame.size.width/2)-32)
+            make.right.equalToSuperview()
         }
         
         containerView.layer.shadowColor = UIColor.gray.withAlphaComponent(0.3).cgColor

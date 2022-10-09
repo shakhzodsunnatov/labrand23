@@ -11,7 +11,7 @@ class HomeViewController: BaseViewController {
 
     //MARK: - Properties
     var superView: HomeView?
-    var interactor: HomeInteractor?
+    var interactor: HomeInteractable?
     
     var sectionContainer: SectionContainer!
     var sectionHandlers: [SectionHandler] { sectionContainer.sectionHandlers }

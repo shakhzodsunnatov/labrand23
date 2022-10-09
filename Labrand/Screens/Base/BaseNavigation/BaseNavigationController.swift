@@ -106,6 +106,23 @@ extension UINavigationController {
         self.navigationBar.layer.shadowRadius = 7
     }
     
+    func makeNavigationBarRegural() {
+        let navBarAppearance = UINavigationBarAppearance()
+        navBarAppearance.configureWithOpaqueBackground()
+        navBarAppearance.shadowColor = .clear
+        navBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.black0]
+        navBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.black0]
+        navBarAppearance.backgroundColor = .appColor(.viewBackground)
+        
+        self.navigationBar.standardAppearance = navBarAppearance
+        self.navigationBar.scrollEdgeAppearance = navBarAppearance
+        
+        self.navigationBar.layer.shadowColor = .none
+        self.navigationBar.layer.shadowOpacity = 0
+        self.navigationBar.layer.shadowOffset = CGSize.zero
+        self.navigationBar.layer.shadowRadius = 0
+    }
+    
     func makeNavigationBarOpaque() {
         self.navigationBar.setBackgroundImage(nil, for: .default)
         self.navigationBar.isTranslucent = false

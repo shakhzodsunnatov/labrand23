@@ -20,5 +20,8 @@ class ShopInteractor {
 //MARK: - ShopInteractable
 extension ShopInteractor: ShopInteractable {
     
+    func didSelectRowAt() {
+        routing?.openSubcategory()
+    }
 }
 

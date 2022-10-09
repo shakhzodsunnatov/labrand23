@@ -37,7 +37,7 @@ class CategoriesView: BaseView {
         return table
     }()
     
-    var delegate: ICategoriesDelegate?
+    weak var delegate: ICategoriesDelegate?
     
     //MARK: - Initialization
     override init(frame: CGRect) {

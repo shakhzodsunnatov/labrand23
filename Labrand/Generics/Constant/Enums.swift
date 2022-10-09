@@ -11,3 +11,11 @@ enum ViewState: String
 {
     case normal, error, ok, grayed
 }
+
+enum SortType: String, CaseIterable {
+    case popular = "Popular"
+    case newesr = "Newest"
+    case customerReview = "Customer Review"
+    case lowestToHigh = "Price: lowest to high"
+    case highestToLow = "Price: highest to low"
+}

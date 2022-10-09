@@ -75,7 +75,7 @@ class TabBarViewController: UITabBarController {
             return homeNC
             
         case .bag:
-            let home = HomeConfigurator.configureModule()
+            let home = CatalogConfigurator.configureModule()
             let homeNC = BaseNavigationController(rootViewController: home)
             homeNC.tabBarItem = getTabBarItem(type: .home, title: "Bag", "bag_inactive", "bag_activated")
             

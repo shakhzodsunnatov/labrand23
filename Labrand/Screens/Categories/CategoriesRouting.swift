@@ -18,4 +18,8 @@ class CategoriesRouter {
 
 extension CategoriesRouter: CategoriesRouting {
     
+    func openCatalog() {
+        let vc = CatalogConfigurator.configureModule()
+        viewController?.navigationController?.pushViewController(vc, animated: true)
+    }
 }

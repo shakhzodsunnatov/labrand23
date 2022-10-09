@@ -96,6 +96,19 @@ extension UIView {
         layer.shouldRasterize = true
         layer.rasterizationScale = scale ? UIScreen.main.scale : 1
     }
+    
+    // BOTTOM SHADOW
+    func addBottomShadow() {
+        layer.masksToBounds = false
+        layer.shadowRadius = 7
+        layer.shadowOpacity = 0.2
+        layer.shadowColor = UIColor.black.cgColor
+        layer.shadowOffset = CGSize(width: 0, height: 7)
+//        layer.shadowPath = UIBezierPath(rect: CGRect(x: 0,
+//                                                     y: bounds.maxY - layer.shadowRadius,
+//                                                     width: bounds.width,
+//                                                     height: layer.shadowRadius)).cgPath
+    }
 }
 
 extension UIStackView {
@@ -128,5 +141,4 @@ public extension UIView {
             }
         }
     }
-    
 }

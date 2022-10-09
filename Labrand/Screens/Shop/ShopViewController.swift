@@ -13,7 +13,7 @@ class ShopViewController: BaseViewController {
 
     //MARK: - Properties
     var superView: ShopView?
-    var interactor: ShopInteractor?
+    var interactor: ShopInteractable?
     
     //MARK: - Lifecycle
     override func viewDidLoad() {
@@ -45,10 +45,7 @@ extension ShopViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath)
         cell?.showAnimation { [weak self] in
-            
-            let vc = CategoriesConfigurator.configureModule()
-            self?.pushViewController(vc)
-            
+            self?.interactor?.didSelectRowAt()
         }
     }
 }

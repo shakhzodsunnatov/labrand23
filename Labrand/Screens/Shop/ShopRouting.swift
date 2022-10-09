@@ -17,5 +17,8 @@ class ShopRouter {
 }
 
 extension ShopRouter: ShopRouting {
-    
+    func openSubcategory() {
+        let vc = CategoriesConfigurator.configureModule()
+        viewController?.navigationController?.pushViewController(vc, animated: true)
+    }
 }

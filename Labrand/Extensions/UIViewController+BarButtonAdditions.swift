@@ -51,6 +51,10 @@ extension UIViewController {
         
     }
     
+    func addLeftSearchButton() {
+        self.addRightButton(image: UIImage(systemName: "magnifyingglass")!.withTintColor(.black0, renderingMode: .alwaysOriginal), selector: #selector(searchButtonTapped))
+    }
+    
     func addRightButton(imagename: String, selector: Selector) {
         guard let image = UIImage(named: imagename) else { return }
         

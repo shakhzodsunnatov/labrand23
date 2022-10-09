@@ -15,7 +15,7 @@ class SubcategoryTableCell: TableViewCell {
     var titleLabel: UILabel = {
         let label = UILabel()
         label.font = .lightFont(ofSize: 16)
-        label.textColor = .black
+        label.textColor = .black0
         return label
     }()
     

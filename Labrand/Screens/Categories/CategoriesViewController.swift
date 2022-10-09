@@ -9,11 +9,11 @@
 
 import UIKit
 
-class CategoriesViewController: UIViewController {
+class CategoriesViewController: BaseViewController {
 
     //MARK: - Properties
     var superView: CategoriesView?
-    var interactor: CategoriesInteractor?
+    var interactor: CategoriesInteractable?
     
     //MARK: - Lifecycle
     override func viewDidLoad() {
@@ -43,7 +43,7 @@ extension CategoriesViewController: ICategoriesDelegate {
 //MARK: - UITableViewDelegate
 extension CategoriesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        interactor?.didSelectRowAt(index: indexPath.row)
     }
 }
 

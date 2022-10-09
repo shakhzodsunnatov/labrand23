@@ -20,5 +20,9 @@ class CategoriesInteractor {
 //MARK: - CategoriesInteractable
 extension CategoriesInteractor: CategoriesInteractable {
     
+    func didSelectRowAt(index: Int) {
+        routing?.openCatalog()
+    }
+    
 }
 

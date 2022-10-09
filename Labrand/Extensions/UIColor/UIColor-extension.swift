@@ -83,6 +83,13 @@ extension UIColor {
         )
     }
     
+    class var white0: UIColor {
+        UIColor(
+            light: UIColor.white,
+            dark: UIColor.black
+        )
+    }
+    
     class var whiteAssetBg: UIColor {
         UIColor(
             light: .white,
