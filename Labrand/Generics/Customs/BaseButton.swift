@@ -23,7 +23,6 @@ class BaseButton: Button {
         super.layoutSubviews()
         
         color = .appColor(.redPrimary)
-        fontSize = 14
         heightAdditional = 48
     }
     

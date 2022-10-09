@@ -111,7 +111,7 @@ public extension UIView {
     
     func showAnimation(_ completionBlock: @escaping () -> Void) {
         isUserInteractionEnabled = false
-        UIView.animate(withDuration: 0.1,
+        UIView.animate(withDuration: 0.05,
                        delay: 0,
                        options: .curveLinear,
                        animations: { [weak self] in
