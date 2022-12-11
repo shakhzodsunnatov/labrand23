@@ -32,6 +32,13 @@
 		2E35174028EAE793007D891B /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E35173F28EAE793007D891B /* ProductModel.swift */; };
 		2E35174228EAEEC1007D891B /* ProductCollectionItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E35174128EAEEC1007D891B /* ProductCollectionItemCell.swift */; };
 		2E5E717B28EEFFE50029B481 /* UIScrollView-extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E717A28EEFFE50029B481 /* UIScrollView-extension.swift */; };
+		2E61BB8E28F45BF1002F8472 /* ProductCardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E61BB8A28F45BF1002F8472 /* ProductCardPresenter.swift */; };
+		2E61BB8F28F45BF1002F8472 /* ProductCardInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E61BB8B28F45BF1002F8472 /* ProductCardInteractor.swift */; };
+		2E61BB9028F45BF1002F8472 /* ProductCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E61BB8C28F45BF1002F8472 /* ProductCardViewController.swift */; };
+		2E61BB9128F45BF1002F8472 /* ProductCardRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E61BB8D28F45BF1002F8472 /* ProductCardRouting.swift */; };
+		2E61BB9428F45BFC002F8472 /* ProductCardProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E61BB9228F45BFC002F8472 /* ProductCardProtocols.swift */; };
+		2E61BB9528F45BFC002F8472 /* ProductCardConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E61BB9328F45BFC002F8472 /* ProductCardConfigurator.swift */; };
+		2E61BB9728F45C01002F8472 /* ProductCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E61BB9628F45C01002F8472 /* ProductCardView.swift */; };
 		2E75277828F329EA0089AAA4 /* SortSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E75277728F329EA0089AAA4 /* SortSheetViewController.swift */; };
 		2E782FBA28DC5563003C102B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E782FB928DC5563003C102B /* AppDelegate.swift */; };
 		2E782FBC28DC5563003C102B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E782FBB28DC5563003C102B /* SceneDelegate.swift */; };
@@ -169,6 +176,13 @@
 		2E35173F28EAE793007D891B /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		2E35174128EAEEC1007D891B /* ProductCollectionItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionItemCell.swift; sourceTree = "<group>"; };
 		2E5E717A28EEFFE50029B481 /* UIScrollView-extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView-extension.swift"; sourceTree = "<group>"; };
+		2E61BB8A28F45BF1002F8472 /* ProductCardPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCardPresenter.swift; sourceTree = "<group>"; };
+		2E61BB8B28F45BF1002F8472 /* ProductCardInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCardInteractor.swift; sourceTree = "<group>"; };
+		2E61BB8C28F45BF1002F8472 /* ProductCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCardViewController.swift; sourceTree = "<group>"; };
+		2E61BB8D28F45BF1002F8472 /* ProductCardRouting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCardRouting.swift; sourceTree = "<group>"; };
+		2E61BB9228F45BFC002F8472 /* ProductCardProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCardProtocols.swift; sourceTree = "<group>"; };
+		2E61BB9328F45BFC002F8472 /* ProductCardConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCardConfigurator.swift; sourceTree = "<group>"; };
+		2E61BB9628F45C01002F8472 /* ProductCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCardView.swift; sourceTree = "<group>"; };
 		2E75277728F329EA0089AAA4 /* SortSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortSheetViewController.swift; sourceTree = "<group>"; };
 		2E782FB628DC5563003C102B /* Labrand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Labrand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E782FB928DC5563003C102B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -368,6 +382,36 @@
 			isa = PBXGroup;
 			children = (
 				2E06BAD428EC5D8D0083C43E /* ShopView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2E61BB8728F45BD0002F8472 /* ProductCard */ = {
+			isa = PBXGroup;
+			children = (
+				2E61BB8828F45BD8002F8472 /* Configuration */,
+				2E61BB8928F45BE6002F8472 /* View */,
+				2E61BB8B28F45BF1002F8472 /* ProductCardInteractor.swift */,
+				2E61BB8A28F45BF1002F8472 /* ProductCardPresenter.swift */,
+				2E61BB8D28F45BF1002F8472 /* ProductCardRouting.swift */,
+				2E61BB8C28F45BF1002F8472 /* ProductCardViewController.swift */,
+			);
+			path = ProductCard;
+			sourceTree = "<group>";
+		};
+		2E61BB8828F45BD8002F8472 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				2E61BB9328F45BFC002F8472 /* ProductCardConfigurator.swift */,
+				2E61BB9228F45BFC002F8472 /* ProductCardProtocols.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		2E61BB8928F45BE6002F8472 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2E61BB9628F45C01002F8472 /* ProductCardView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -590,6 +634,7 @@
 				2E06BAD128EC5D6F0083C43E /* Shop */,
 				2EA38C8128F2C4E3002CA93A /* Categories */,
 				2EA38C9728F2CE58002CA93A /* Catalog */,
+				2E61BB8728F45BD0002F8472 /* ProductCard */,
 				2E06BA6128EC32EA0083C43E /* TabBar */,
 				2E78301828DC7CF7003C102B /* Base */,
 			);
@@ -1036,6 +1081,7 @@
 				2EF3262128E30FEC003312CB /* ProductsTableCell.swift in Sources */,
 				2EA38CB128F2F3E7002CA93A /* CategoryBtnCollectionCell.swift in Sources */,
 				2E78303328DC88C3003C102B /* UIApplicationExtension.swift in Sources */,
+				2E61BB8E28F45BF1002F8472 /* ProductCardPresenter.swift in Sources */,
 				2EF3261428E30588003312CB /* HomeView.swift in Sources */,
 				2E78302328DC8679003C102B /* UIView-extension.swift in Sources */,
 				2E35174228EAEEC1007D891B /* ProductCollectionItemCell.swift in Sources */,
@@ -1047,6 +1093,7 @@
 				2E06BA7028EC342A0083C43E /* TabBarConfigurator.swift in Sources */,
 				2E78300828DC6443003C102B /* GCDUtils.swift in Sources */,
 				2E35174028EAE793007D891B /* ProductModel.swift in Sources */,
+				2E61BB9728F45C01002F8472 /* ProductCardView.swift in Sources */,
 				2E78302B28DC87CD003C102B /* Alert.swift in Sources */,
 				2EA38CA028F2CEA7002CA93A /* CatalogViewController.swift in Sources */,
 				2EF3261C28E30A9C003312CB /* HomeRouting.swift in Sources */,
@@ -1060,12 +1107,14 @@
 				2E78300328DC632E003C102B /* AssetColors.swift in Sources */,
 				2E88749A28DF55C60012DF93 /* LoginViewController.swift in Sources */,
 				2E06BAE128EC5DA80083C43E /* ShopConfigurator.swift in Sources */,
+				2E61BB9028F45BF1002F8472 /* ProductCardViewController.swift in Sources */,
 				2EA38CA328F2CEA7002CA93A /* CatalogPresenter.swift in Sources */,
 				2E06BAE528EC62970083C43E /* UIViewController+BarButtonAdditions.swift in Sources */,
 				2E78304028DDBA27003C102B /* BaseView.swift in Sources */,
 				2E78303C28DD8FED003C102B /* UIButton-extension.swift in Sources */,
 				2EA38C8828F2C4EE002CA93A /* CategoriesRouting.swift in Sources */,
 				2E78306628DF3E00003C102B /* AuthTextField.swift in Sources */,
+				2E61BB8F28F45BF1002F8472 /* ProductCardInteractor.swift in Sources */,
 				2E78302928DC8793003C102B /* String+extension.swift in Sources */,
 				2E78302128DC848C003C102B /* BaseNavigationController.swift in Sources */,
 				2EF5723A28ED87FE00D63B23 /* SaleTabeCell.swift in Sources */,
@@ -1085,6 +1134,7 @@
 				2EA38CA628F2CEB4002CA93A /* CatalogProtocols.swift in Sources */,
 				2EA38C8F28F2C507002CA93A /* CategoriesConfigurator.swift in Sources */,
 				2E06BADD28EC5D9E0083C43E /* ShopViewController.swift in Sources */,
+				2E61BB9428F45BFC002F8472 /* ProductCardProtocols.swift in Sources */,
 				2E78300E28DC66F5003C102B /* AppService.swift in Sources */,
 				2E06BADC28EC5D9E0083C43E /* ShopInteractor.swift in Sources */,
 				2E78302D28DC87FB003C102B /* UIViewController+extension.swift in Sources */,
@@ -1126,8 +1176,10 @@
 				2EA38C9428F2C7B1002CA93A /* SubcategoryTableCell.swift in Sources */,
 				2E78301628DC6936003C102B /* LaunchScreenViewController.swift in Sources */,
 				2E8874B528DF70DC0012DF93 /* ApiService.swift in Sources */,
+				2E61BB9128F45BF1002F8472 /* ProductCardRouting.swift in Sources */,
 				2E78306828DF3F25003C102B /* Enums.swift in Sources */,
 				2EF3260928E2FC2D003312CB /* SectionContainer.swift in Sources */,
+				2E61BB9528F45BFC002F8472 /* ProductCardConfigurator.swift in Sources */,
 				2EF3260F28E2FDDB003312CB /* HomeConfigurator.swift in Sources */,
 				2E8874B328DF6AA90012DF93 /* LoginRouter.swift in Sources */,
 				2E06BA7228EC342A0083C43E /* TabBarViewController.swift in Sources */,

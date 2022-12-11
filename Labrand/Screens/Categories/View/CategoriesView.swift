@@ -28,11 +28,11 @@ class CategoriesView: BaseView {
         let table = UITableView()
         table.showsVerticalScrollIndicator = false
         table.contentInsetAdjustmentBehavior = .never
-        table.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 100, right: 0)
+        table.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 100, right: 0)
         table.separatorStyle = .none
         table.backgroundColor = .clear
         table.register(SubcategoryTableCell.self, forCellReuseIdentifier: SubcategoryTableCell.description())
-        table.tableHeaderView = HeaderTitleView(frame: CGRect(x: .zero, y: .zero, width: SCREEN_WIDTH, height: 30))
+        table.tableHeaderView = HeaderTitleView(frame: CGRect(x: .zero, y: .zero, width: SCREEN_WIDTH, height: 46))
         
         return table
     }()

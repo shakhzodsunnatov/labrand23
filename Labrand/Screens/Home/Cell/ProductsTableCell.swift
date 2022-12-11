@@ -33,7 +33,7 @@ class ProductsTableCell: UITableViewCell {
     }()
     private let titleLabel: UILabel = {
         let label = UILabel()
-        label.attributedText = NSMutableAttributedString.creatAttrString(
+        label.attributedText = NSMutableAttributedString.createAttrString(
             text: "News",
             font: .boldFont(ofSize: 34),
             lineSpacing: 1.08,
@@ -46,7 +46,7 @@ class ProductsTableCell: UITableViewCell {
     }()
     private let subTitle: UILabel = {
         let label = UILabel()
-        label.attributedText = NSMutableAttributedString.creatAttrString(
+        label.attributedText = NSMutableAttributedString.createAttrString(
             text: "Super summer sale",
             font: .regularFont(ofSize: 13),
             lineSpacing: 1.08,
@@ -134,7 +134,7 @@ extension ProductsTableCell {
     
     private func updateTextLabels(title: String, subTitle: String) {
         
-        self.titleLabel.attributedText = NSMutableAttributedString.creatAttrString(
+        self.titleLabel.attributedText = NSMutableAttributedString.createAttrString(
             text: title,
             font: .boldFont(ofSize: 34),
             lineSpacing: 1.08,
@@ -143,7 +143,7 @@ extension ProductsTableCell {
             lineBreakMode: .byTruncatingTail,
             color: .black0)
         
-        self.subTitle.attributedText = NSMutableAttributedString.creatAttrString(
+        self.subTitle.attributedText = NSMutableAttributedString.createAttrString(
             text: title,
             font: .regularFont(ofSize: 13),
             lineSpacing: 1.08,

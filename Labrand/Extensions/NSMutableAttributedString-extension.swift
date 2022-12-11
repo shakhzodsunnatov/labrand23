@@ -11,7 +11,7 @@ import UIKit
 
 extension NSMutableAttributedString
 {
-    static func creatAttrString(text: String,
+    static func createAttrString(text: String,
                                 font: UIFont,
                                 lineSpacing: CGFloat,
                                 value: Float,

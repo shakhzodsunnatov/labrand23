@@ -91,7 +91,7 @@ class BannerHeaderView: UIView {
         imageViewHeight = bannerImageView.heightAnchor.constraint(equalTo: containerView.heightAnchor)
         imageViewHeight.isActive = true
         
-//         Title & CheckButton
+        // Title & CheckButton
         checkButton.translatesAutoresizingMaskIntoConstraints = false
         bannerTitle.translatesAutoresizingMaskIntoConstraints = false
 

@@ -1,6 +1,5 @@
 //
 //  Button.swift
-//  Labrand
 //
 //  Created by Shakhzod on 23/09/22.
 //

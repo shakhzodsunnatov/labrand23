@@ -17,6 +17,7 @@ class LoginViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -32,6 +33,7 @@ extension LoginViewController {
 
 //MARK: - ILoginView
 extension LoginViewController: ILoginView {
+    
     func nextButtonAction(emailText: String, passwordText: String) {
         superView?.showButtonLoader(true)
         interactor?.nextButtonPressed()

@@ -111,7 +111,7 @@ extension String
         
         label.numberOfLines = numberOfLines
         label.attributedText =
-        NSMutableAttributedString.creatAttrString(text: text,
+        NSMutableAttributedString.createAttrString(text: text,
                                                   font: font,
                                                   lineSpacing: 1.08,
                                                   value: 0.34,
@@ -130,7 +130,7 @@ extension String
         let label = UILabel()
 
         label.attributedText =
-        NSMutableAttributedString.creatAttrString(text: text,
+        NSMutableAttributedString.createAttrString(text: text,
                                                   font: font,
                                                   lineSpacing: 1.08,
                                                   value: 0.34,

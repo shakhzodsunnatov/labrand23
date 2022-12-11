@@ -32,7 +32,7 @@ class HeaderTitleView: UIView {
         super.layoutSubviews()
         
         label.snp.makeConstraints { make in
-            make.top.equalToSuperview().inset(5)
+            make.top.equalToSuperview().inset(16)
             make.left.equalToSuperview().inset(16)
         }
     }
