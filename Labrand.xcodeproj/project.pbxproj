@@ -132,6 +132,9 @@
 		2EF3262128E30FEC003312CB /* ProductsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF3262028E30FEC003312CB /* ProductsTableCell.swift */; };
 		2EF5723A28ED87FE00D63B23 /* SaleTabeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF5723928ED87FE00D63B23 /* SaleTabeCell.swift */; };
 		2EF5723C28ED8A8800D63B23 /* CategoryTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF5723B28ED8A8800D63B23 /* CategoryTableCell.swift */; };
+		2EF92E1094F0F2C753DB0E74 /* Pods_Labrand_LabrandUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5D7F1F15576C1D59480E3D9 /* Pods_Labrand_LabrandUITests.framework */; };
+		47712E56B8430B9AF74B44FC /* Pods_LabrandTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1193E72930A748764817936B /* Pods_LabrandTests.framework */; };
+		6AD1295C4FCA0A4B5E0D8227 /* Pods_Labrand.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7AAA388C022FF9C76F0A20C /* Pods_Labrand.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -152,6 +155,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0584C7C1A5C2C160C674A7BB /* Pods-Labrand-LabrandUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Labrand-LabrandUITests.release.xcconfig"; path = "Target Support Files/Pods-Labrand-LabrandUITests/Pods-Labrand-LabrandUITests.release.xcconfig"; sourceTree = "<group>"; };
+		07E3367C36C71E72A5F0BE66 /* Pods-Labrand.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Labrand.release.xcconfig"; path = "Target Support Files/Pods-Labrand/Pods-Labrand.release.xcconfig"; sourceTree = "<group>"; };
+		1193E72930A748764817936B /* Pods_LabrandTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LabrandTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A1AAFF367C1804C6BB34031 /* Pods-LabrandTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LabrandTests.release.xcconfig"; path = "Target Support Files/Pods-LabrandTests/Pods-LabrandTests.release.xcconfig"; sourceTree = "<group>"; };
+		235E88BA765BC461E14D16E8 /* Pods-Labrand.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Labrand.debug.xcconfig"; path = "Target Support Files/Pods-Labrand/Pods-Labrand.debug.xcconfig"; sourceTree = "<group>"; };
 		2E06BA5C28EC19180083C43E /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		2E06BA5F28EC2AE10083C43E /* ProductsSectionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsSectionHandler.swift; sourceTree = "<group>"; };
 		2E06BA6328EC33290083C43E /* TabBarBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarBadge.swift; sourceTree = "<group>"; };
@@ -277,6 +285,10 @@
 		2EF3262028E30FEC003312CB /* ProductsTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsTableCell.swift; sourceTree = "<group>"; };
 		2EF5723928ED87FE00D63B23 /* SaleTabeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaleTabeCell.swift; sourceTree = "<group>"; };
 		2EF5723B28ED8A8800D63B23 /* CategoryTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableCell.swift; sourceTree = "<group>"; };
+		5F2AA4B8E3A0C5BCD3892F18 /* Pods-LabrandTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LabrandTests.debug.xcconfig"; path = "Target Support Files/Pods-LabrandTests/Pods-LabrandTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D5D7F1F15576C1D59480E3D9 /* Pods_Labrand_LabrandUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Labrand_LabrandUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF65AF3AE3586C1B1E378867 /* Pods-Labrand-LabrandUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Labrand-LabrandUITests.debug.xcconfig"; path = "Target Support Files/Pods-Labrand-LabrandUITests/Pods-Labrand-LabrandUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F7AAA388C022FF9C76F0A20C /* Pods_Labrand.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Labrand.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -288,6 +300,7 @@
 				2ED1344B28EAFB8500FE64DC /* SnapKit in Frameworks */,
 				2E16F11128EAFDD4000184B7 /* Cosmos in Frameworks */,
 				2ED1344E28EAFBA000FE64DC /* Alamofire in Frameworks */,
+				6AD1295C4FCA0A4B5E0D8227 /* Pods_Labrand.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +308,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47712E56B8430B9AF74B44FC /* Pods_LabrandTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,12 +316,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EF92E1094F0F2C753DB0E74 /* Pods_Labrand_LabrandUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08FFCE9C76C9D6118356AAF9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				235E88BA765BC461E14D16E8 /* Pods-Labrand.debug.xcconfig */,
+				07E3367C36C71E72A5F0BE66 /* Pods-Labrand.release.xcconfig */,
+				DF65AF3AE3586C1B1E378867 /* Pods-Labrand-LabrandUITests.debug.xcconfig */,
+				0584C7C1A5C2C160C674A7BB /* Pods-Labrand-LabrandUITests.release.xcconfig */,
+				5F2AA4B8E3A0C5BCD3892F18 /* Pods-LabrandTests.debug.xcconfig */,
+				1A1AAFF367C1804C6BB34031 /* Pods-LabrandTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		2E06BA5E28EC2ACF0083C43E /* SectionHandles */ = {
 			isa = PBXGroup;
 			children = (
@@ -423,6 +452,8 @@
 				2E782FCF28DC5564003C102B /* LabrandTests */,
 				2E782FD928DC5564003C102B /* LabrandUITests */,
 				2E782FB728DC5563003C102B /* Products */,
+				08FFCE9C76C9D6118356AAF9 /* Pods */,
+				D6B2BEBA45973C38FB4D05F4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -927,6 +958,16 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		D6B2BEBA45973C38FB4D05F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7AAA388C022FF9C76F0A20C /* Pods_Labrand.framework */,
+				D5D7F1F15576C1D59480E3D9 /* Pods_Labrand_LabrandUITests.framework */,
+				1193E72930A748764817936B /* Pods_LabrandTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -934,9 +975,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E782FE028DC5564003C102B /* Build configuration list for PBXNativeTarget "Labrand" */;
 			buildPhases = (
+				A865FC5B630DE5E8072C5A9F /* [CP] Check Pods Manifest.lock */,
 				2E782FB228DC5563003C102B /* Sources */,
 				2E782FB328DC5563003C102B /* Frameworks */,
 				2E782FB428DC5563003C102B /* Resources */,
+				1A3B9AC31DE73D0CD8A39B95 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -957,6 +1000,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E782FE328DC5564003C102B /* Build configuration list for PBXNativeTarget "LabrandTests" */;
 			buildPhases = (
+				652E740F2F0572DFC3291D80 /* [CP] Check Pods Manifest.lock */,
 				2E782FC828DC5564003C102B /* Sources */,
 				2E782FC928DC5564003C102B /* Frameworks */,
 				2E782FCA28DC5564003C102B /* Resources */,
@@ -975,9 +1019,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E782FE628DC5564003C102B /* Build configuration list for PBXNativeTarget "LabrandUITests" */;
 			buildPhases = (
+				72C407EEFDAD79659C76CC24 /* [CP] Check Pods Manifest.lock */,
 				2E782FD228DC5564003C102B /* Sources */,
 				2E782FD328DC5564003C102B /* Frameworks */,
 				2E782FD428DC5564003C102B /* Resources */,
+				C42F487C913DA920C408A350 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1022,10 +1068,10 @@
 			);
 			mainGroup = 2E782FAD28DC5563003C102B;
 			packageReferences = (
-				2ED1344928EAFB8500FE64DC /* XCRemoteSwiftPackageReference "SnapKit" */,
-				2ED1344C28EAFBA000FE64DC /* XCRemoteSwiftPackageReference "Alamofire" */,
-				2ED1344F28EAFBAD00FE64DC /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
-				2E16F10F28EAFDD4000184B7 /* XCRemoteSwiftPackageReference "Cosmos" */,
+				2ED1344928EAFB8500FE64DC /* XCRemoteSwiftPackageReference "SnapKit.git" */,
+				2ED1344C28EAFBA000FE64DC /* XCRemoteSwiftPackageReference "Alamofire.git" */,
+				2ED1344F28EAFBAD00FE64DC /* XCRemoteSwiftPackageReference "SwiftyJSON.git" */,
+				2E16F10F28EAFDD4000184B7 /* XCRemoteSwiftPackageReference "Cosmos.git" */,
 			);
 			productRefGroup = 2E782FB728DC5563003C102B /* Products */;
 			projectDirPath = "";
@@ -1070,6 +1116,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A3B9AC31DE73D0CD8A39B95 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Labrand/Pods-Labrand-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Labrand/Pods-Labrand-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Labrand/Pods-Labrand-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		652E740F2F0572DFC3291D80 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LabrandTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72C407EEFDAD79659C76CC24 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Labrand-LabrandUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A865FC5B630DE5E8072C5A9F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Labrand-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C42F487C913DA920C408A350 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Labrand-LabrandUITests/Pods-Labrand-LabrandUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Labrand-LabrandUITests/Pods-Labrand-LabrandUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Labrand-LabrandUITests/Pods-Labrand-LabrandUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2E782FB228DC5563003C102B /* Sources */ = {
@@ -1350,6 +1499,7 @@
 		};
 		2E782FE128DC5564003C102B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 235E88BA765BC461E14D16E8 /* Pods-Labrand.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1379,6 +1529,7 @@
 		};
 		2E782FE228DC5564003C102B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07E3367C36C71E72A5F0BE66 /* Pods-Labrand.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1408,6 +1559,7 @@
 		};
 		2E782FE428DC5564003C102B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F2AA4B8E3A0C5BCD3892F18 /* Pods-LabrandTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1428,6 +1580,7 @@
 		};
 		2E782FE528DC5564003C102B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A1AAFF367C1804C6BB34031 /* Pods-LabrandTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1448,6 +1601,7 @@
 		};
 		2E782FE728DC5564003C102B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF65AF3AE3586C1B1E378867 /* Pods-Labrand-LabrandUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1466,6 +1620,7 @@
 		};
 		2E782FE828DC5564003C102B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0584C7C1A5C2C160C674A7BB /* Pods-Labrand-LabrandUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1524,7 +1679,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		2E16F10F28EAFDD4000184B7 /* XCRemoteSwiftPackageReference "Cosmos" */ = {
+		2E16F10F28EAFDD4000184B7 /* XCRemoteSwiftPackageReference "Cosmos.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/evgenyneu/Cosmos.git";
 			requirement = {
@@ -1532,7 +1687,7 @@
 				kind = branch;
 			};
 		};
-		2ED1344928EAFB8500FE64DC /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+		2ED1344928EAFB8500FE64DC /* XCRemoteSwiftPackageReference "SnapKit.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
@@ -1540,7 +1695,7 @@
 				minimumVersion = 5.0.0;
 			};
 		};
-		2ED1344C28EAFBA000FE64DC /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		2ED1344C28EAFBA000FE64DC /* XCRemoteSwiftPackageReference "Alamofire.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
@@ -1548,7 +1703,7 @@
 				minimumVersion = 5.0.0;
 			};
 		};
-		2ED1344F28EAFBAD00FE64DC /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+		2ED1344F28EAFBAD00FE64DC /* XCRemoteSwiftPackageReference "SwiftyJSON.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
 			requirement = {
@@ -1561,22 +1716,22 @@
 /* Begin XCSwiftPackageProductDependency section */
 		2E16F11028EAFDD4000184B7 /* Cosmos */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2E16F10F28EAFDD4000184B7 /* XCRemoteSwiftPackageReference "Cosmos" */;
+			package = 2E16F10F28EAFDD4000184B7 /* XCRemoteSwiftPackageReference "Cosmos.git" */;
 			productName = Cosmos;
 		};
 		2ED1344A28EAFB8500FE64DC /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2ED1344928EAFB8500FE64DC /* XCRemoteSwiftPackageReference "SnapKit" */;
+			package = 2ED1344928EAFB8500FE64DC /* XCRemoteSwiftPackageReference "SnapKit.git" */;
 			productName = SnapKit;
 		};
 		2ED1344D28EAFBA000FE64DC /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2ED1344C28EAFBA000FE64DC /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = 2ED1344C28EAFBA000FE64DC /* XCRemoteSwiftPackageReference "Alamofire.git" */;
 			productName = Alamofire;
 		};
 		2ED1345028EAFBAD00FE64DC /* SwiftyJSON */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2ED1344F28EAFBAD00FE64DC /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			package = 2ED1344F28EAFBAD00FE64DC /* XCRemoteSwiftPackageReference "SwiftyJSON.git" */;
 			productName = SwiftyJSON;
 		};
 /* End XCSwiftPackageProductDependency section */
