@@ -13,9 +13,6 @@ class HomeViewController: BaseViewController {
     var superView: HomeView?
     var interactor: HomeInteractable?
     
-    var sectionContainer: SectionContainer!
-    var sectionHandlers: [SectionHandler] { sectionContainer.sectionHandlers }
-    
     //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,24 +39,40 @@ extension HomeViewController: BannerCheckButtonDelegate {
 
 //MARK: - UITableViewDelegate
 extension HomeViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-    }
+    
 }
 
 //MARK: - UITableViewDataSource
 extension HomeViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return sectionHandlers.count
+        return 2
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return sectionHandlers[indexPath.row].cellHeight
+        return 378
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return sectionContainer.tableView(tableView, cellForRowAt: indexPath)
+        let cell = tableView.dequeueCell(ProductsTableCell.self, indexPath: indexPath)
+
+        cell.configure(
+            products: interactor?.getProducts(),
+            cellTitle: "News",
+            subTitle: "Super summer sale"
+        )
+        
+        cell.completionShowAllButton = { [weak self] in
+            debugPrint("View All Tapped!!")
+        }
+        
+        cell.completionDidSelectItemAt = { [weak self] product in
+            debugPrint("Product Tapped \(String(describing: product?.title))")
+            guard let self, let product else { return }
+            self.interactor?.didSelectProduct(product)
+        }
+        
+        return cell
     }
 }
 
@@ -73,6 +86,7 @@ extension HomeViewController: UIScrollViewDelegate {
 //MARK: - SetupUI
 extension HomeViewController {
     private func setupUI() {
+        
         self.view = superView
         superView?.tableView.delegate = self
         superView?.tableView.dataSource = self

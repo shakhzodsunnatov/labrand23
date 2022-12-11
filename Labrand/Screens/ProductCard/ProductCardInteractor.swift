@@ -24,6 +24,7 @@ class ProductCardInteractor {
 
 //MARK: - ProductCardInteractable
 extension ProductCardInteractor: ProductCardInteractable {
+    
     func getModel() -> ProductModel {
         return self.model
     }

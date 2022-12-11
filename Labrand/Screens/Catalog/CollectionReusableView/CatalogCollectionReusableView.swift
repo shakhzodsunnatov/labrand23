@@ -96,7 +96,7 @@ class CatalogCollectionReusableView: UICollectionReusableView {
         
         categoriesCollectionView.snp.makeConstraints { make in
             make.height.equalTo(30)
-            make.horizontalEdges.equalToSuperview()
+            make.left.right.equalToSuperview()
         }
         
         filterButton.snp.makeConstraints { make in
@@ -113,7 +113,7 @@ class CatalogCollectionReusableView: UICollectionReusableView {
         
         sortStackView.snp.makeConstraints { make in
             make.top.equalTo(categoriesCollectionView.snp.bottom).offset(18)
-            make.horizontalEdges.equalToSuperview().inset(16)
+            make.left.right.equalToSuperview().inset(16)
             make.height.equalTo(24)
         }
     }

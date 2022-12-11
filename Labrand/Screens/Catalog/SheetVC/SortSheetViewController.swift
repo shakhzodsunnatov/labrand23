@@ -42,7 +42,7 @@ class SortSheetViewController: UIViewController {
         
         sheetContrinerView.snp.makeConstraints { make in
             make.height.equalTo(350)
-            make.horizontalEdges.bottom.equalToSuperview()
+            make.left.right.bottom.equalToSuperview()
         }
         
         tableView.snp.makeConstraints { make in
@@ -79,6 +79,7 @@ extension SortSheetViewController: UITableViewDelegate, UITableViewDataSource {
         
         let divView = UIView()
         divView.backgroundColor = .systemGray
+        divView.layer.cornerRadius = 3
         
         headerView.addSubview(divView)
         divView.snp.makeConstraints { make in
@@ -86,7 +87,6 @@ extension SortSheetViewController: UITableViewDelegate, UITableViewDataSource {
             make.width.equalTo(60)
             make.centerX.equalToSuperview().offset(16)
         }
-        divView.layer.cornerRadius = 3
         
         let title = UILabel()
         title.text = "Sort by"
@@ -96,7 +96,7 @@ extension SortSheetViewController: UITableViewDelegate, UITableViewDataSource {
         headerView.addSubview(title)
         title.snp.makeConstraints { make in
             make.top.equalTo(divView.snp.bottom).offset(16)
-            make.horizontalEdges.equalToSuperview().offset(16)
+            make.left.right.equalToSuperview().offset(16)
         }
         
         return headerView

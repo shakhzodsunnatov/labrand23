@@ -16,4 +16,9 @@ class HomeRouter {
 
 extension HomeRouter: HomeRouting {
     
+    func openProductCard(_ model: ProductModel) {
+        let productCardVC = ProductCardConfigurator.configureModule(model)
+        let navigationController = BaseNavigationController(rootViewController: productCardVC)
+        viewController?.presentViewController(navigationController)
+    }
 }

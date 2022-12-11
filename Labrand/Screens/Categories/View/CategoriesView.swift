@@ -58,7 +58,6 @@ class CategoriesView: BaseView {
 //MARK: - UI Setup
 extension CategoriesView {
     private func setupUI() {
-        self.backgroundColor = .appColor(.viewBackground)
         
         self.addSubview(viewAllButton)
         self.addSubview(tableView)

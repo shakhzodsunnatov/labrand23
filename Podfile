@@ -8,6 +8,9 @@ target 'Labrand' do
   # Pods for Labrand
 	
 	pod 'SnapKit', '~> 5.0.0'
+	pod 'Alamofire', '~> 5.6'
+	pod 'Cosmos', '~> 23.0'
+	pod 'SwiftyJSON', '~> 5.0'
 
 
   target 'LabrandTests' do

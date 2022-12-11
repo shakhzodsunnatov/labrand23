@@ -19,6 +19,7 @@ class HomeView: BaseView {
         tableView.showsVerticalScrollIndicator = false
         tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 100, right: 0)
         tableView.tableHeaderView = headerBannerView
+        tableView.registerCell(ProductsTableCell.self)
         
         return tableView
     }()
@@ -38,16 +39,10 @@ class HomeView: BaseView {
 //MARK: - UI Setup
 extension HomeView {
     private func setupUI() {
-        self.backgroundColor = .appColor(.viewBackground)
+    
         addSubview(tableView)
         tableView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
-        }
-    }
-    
-    func registerCellToTableView(sectionContainer: SectionContainer) {
-        sectionContainer.sectionHandlers.forEach { cell in
-            tableView.register(cell.cellType, forCellReuseIdentifier: cell.cellType.description())
         }
     }
 }

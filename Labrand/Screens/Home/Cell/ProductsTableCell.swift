@@ -14,7 +14,7 @@ class ProductsTableCell: UITableViewCell {
     
     var productsModel: [ProductModel] = []
     var completionShowAllButton: ()-> Void = {}
-    var complationDidSelectItemAt: (ProductModel?) -> Void = { _ in }
+    var completionDidSelectItemAt: (ProductModel?) -> Void = { _ in }
     
     private lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -157,7 +157,7 @@ extension ProductsTableCell {
 //MARK: - UICollectionViewDelegate
 extension ProductsTableCell {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("Tapped Item")
+        completionDidSelectItemAt(productsModel[indexPath.row])
     }
 }
 

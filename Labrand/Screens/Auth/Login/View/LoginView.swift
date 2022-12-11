@@ -128,7 +128,7 @@ class LoginView: BaseView {
 //MARK: - UI Setup
 extension LoginView {
     private func setupUI() {
-        self.backgroundColor = .appColor(.viewBackground)
+        
         self.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(UIView.endEditing(_:))))
         
         addSubview(stack)

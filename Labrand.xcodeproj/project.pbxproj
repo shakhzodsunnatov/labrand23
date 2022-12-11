@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2E06BA5D28EC19180083C43E /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E06BA5C28EC19180083C43E /* PaddingLabel.swift */; };
-		2E06BA6028EC2AE10083C43E /* ProductsSectionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E06BA5F28EC2AE10083C43E /* ProductsSectionHandler.swift */; };
 		2E06BA6428EC33290083C43E /* TabBarBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E06BA6328EC33290083C43E /* TabBarBadge.swift */; };
 		2E06BA6728EC33800083C43E /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E06BA6628EC33800083C43E /* TabBarItem.swift */; };
 		2E06BA6F28EC342A0083C43E /* TabBarProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E06BA6928EC342A0083C43E /* TabBarProtocols.swift */; };
@@ -27,8 +26,7 @@
 		2E06BAE328EC5F030083C43E /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E06BAE228EC5F030083C43E /* CustomSegmentedControl.swift */; };
 		2E06BAE528EC62970083C43E /* UIViewController+BarButtonAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E06BAE428EC62970083C43E /* UIViewController+BarButtonAdditions.swift */; };
 		2E06BAE728EC63280083C43E /* UIViewController+Additional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E06BAE628EC63280083C43E /* UIViewController+Additional.swift */; };
-		2E16F11128EAFDD4000184B7 /* Cosmos in Frameworks */ = {isa = PBXBuildFile; productRef = 2E16F11028EAFDD4000184B7 /* Cosmos */; };
-		2E16F11328EAFFF2000184B7 /* FavouriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E16F11228EAFFF2000184B7 /* FavouriteButton.swift */; };
+		2E16F11328EAFFF2000184B7 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E16F11228EAFFF2000184B7 /* FavoriteButton.swift */; };
 		2E35174028EAE793007D891B /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E35173F28EAE793007D891B /* ProductModel.swift */; };
 		2E35174228EAEEC1007D891B /* ProductCollectionItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E35174128EAEEC1007D891B /* ProductCollectionItemCell.swift */; };
 		2E5E717B28EEFFE50029B481 /* UIScrollView-extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E717A28EEFFE50029B481 /* UIScrollView-extension.swift */; };
@@ -114,13 +112,8 @@
 		2EA38CB128F2F3E7002CA93A /* CategoryBtnCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA38CB028F2F3E7002CA93A /* CategoryBtnCollectionCell.swift */; };
 		2EA6D84A28E56CE000201C10 /* BannerHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA6D84928E56CE000201C10 /* BannerHeaderView.swift */; };
 		2EB0B0B728E1D0D1008CE1E6 /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB0B0B628E1D0D1008CE1E6 /* BaseButton.swift */; };
-		2ED1344B28EAFB8500FE64DC /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2ED1344A28EAFB8500FE64DC /* SnapKit */; };
-		2ED1344E28EAFBA000FE64DC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2ED1344D28EAFBA000FE64DC /* Alamofire */; };
-		2ED1345128EAFBAD00FE64DC /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 2ED1345028EAFBAD00FE64DC /* SwiftyJSON */; };
 		2EF325F528E2C7D0003312CB /* LoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF325F428E2C7D0003312CB /* LoadingButton.swift */; };
 		2EF325FB28E2D819003312CB /* BaseLoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF325FA28E2D819003312CB /* BaseLoadingButton.swift */; };
-		2EF3260628E2FB8D003312CB /* SectionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF3260528E2FB8D003312CB /* SectionHandler.swift */; };
-		2EF3260928E2FC2D003312CB /* SectionContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF3260828E2FC2D003312CB /* SectionContainer.swift */; };
 		2EF3260D28E2FCF9003312CB /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF3260C28E2FCF9003312CB /* HomeProtocols.swift */; };
 		2EF3260F28E2FDDB003312CB /* HomeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF3260E28E2FDDB003312CB /* HomeConfigurator.swift */; };
 		2EF3261128E301A6003312CB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF3261028E301A6003312CB /* HomeViewController.swift */; };
@@ -161,7 +154,6 @@
 		1A1AAFF367C1804C6BB34031 /* Pods-LabrandTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LabrandTests.release.xcconfig"; path = "Target Support Files/Pods-LabrandTests/Pods-LabrandTests.release.xcconfig"; sourceTree = "<group>"; };
 		235E88BA765BC461E14D16E8 /* Pods-Labrand.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Labrand.debug.xcconfig"; path = "Target Support Files/Pods-Labrand/Pods-Labrand.debug.xcconfig"; sourceTree = "<group>"; };
 		2E06BA5C28EC19180083C43E /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
-		2E06BA5F28EC2AE10083C43E /* ProductsSectionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsSectionHandler.swift; sourceTree = "<group>"; };
 		2E06BA6328EC33290083C43E /* TabBarBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarBadge.swift; sourceTree = "<group>"; };
 		2E06BA6628EC33800083C43E /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
 		2E06BA6928EC342A0083C43E /* TabBarProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarProtocols.swift; sourceTree = "<group>"; };
@@ -180,7 +172,7 @@
 		2E06BAE228EC5F030083C43E /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
 		2E06BAE428EC62970083C43E /* UIViewController+BarButtonAdditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+BarButtonAdditions.swift"; sourceTree = "<group>"; };
 		2E06BAE628EC63280083C43E /* UIViewController+Additional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Additional.swift"; sourceTree = "<group>"; };
-		2E16F11228EAFFF2000184B7 /* FavouriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteButton.swift; sourceTree = "<group>"; };
+		2E16F11228EAFFF2000184B7 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		2E35173F28EAE793007D891B /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		2E35174128EAEEC1007D891B /* ProductCollectionItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionItemCell.swift; sourceTree = "<group>"; };
 		2E5E717A28EEFFE50029B481 /* UIScrollView-extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView-extension.swift"; sourceTree = "<group>"; };
@@ -272,8 +264,6 @@
 		2EB0B0B628E1D0D1008CE1E6 /* BaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
 		2EF325F428E2C7D0003312CB /* LoadingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingButton.swift; sourceTree = "<group>"; };
 		2EF325FA28E2D819003312CB /* BaseLoadingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLoadingButton.swift; sourceTree = "<group>"; };
-		2EF3260528E2FB8D003312CB /* SectionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHandler.swift; sourceTree = "<group>"; };
-		2EF3260828E2FC2D003312CB /* SectionContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionContainer.swift; sourceTree = "<group>"; };
 		2EF3260C28E2FCF9003312CB /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
 		2EF3260E28E2FDDB003312CB /* HomeConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeConfigurator.swift; sourceTree = "<group>"; };
 		2EF3261028E301A6003312CB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -296,10 +286,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2ED1345128EAFBAD00FE64DC /* SwiftyJSON in Frameworks */,
-				2ED1344B28EAFB8500FE64DC /* SnapKit in Frameworks */,
-				2E16F11128EAFDD4000184B7 /* Cosmos in Frameworks */,
-				2ED1344E28EAFBA000FE64DC /* Alamofire in Frameworks */,
 				6AD1295C4FCA0A4B5E0D8227 /* Pods_Labrand.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,16 +319,7 @@
 				5F2AA4B8E3A0C5BCD3892F18 /* Pods-LabrandTests.debug.xcconfig */,
 				1A1AAFF367C1804C6BB34031 /* Pods-LabrandTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		2E06BA5E28EC2ACF0083C43E /* SectionHandles */ = {
-			isa = PBXGroup;
-			children = (
-				2E06BA5F28EC2AE10083C43E /* ProductsSectionHandler.swift */,
-			);
-			path = SectionHandles;
 			sourceTree = "<group>";
 		};
 		2E06BA6128EC32EA0083C43E /* TabBar */ = {
@@ -572,7 +549,6 @@
 				2E8874A228DF589F0012DF93 /* Protocols */,
 				2E78300C28DC66D9003C102B /* AppService */,
 				2E78300F28DC6755003C102B /* Constant */,
-				2EF3260728E2FC14003312CB /* SectionContainer */,
 			);
 			path = Generics;
 			sourceTree = "<group>";
@@ -605,7 +581,7 @@
 				2EB0B0B628E1D0D1008CE1E6 /* BaseButton.swift */,
 				2EF325FA28E2D819003312CB /* BaseLoadingButton.swift */,
 				2EF3261E28E30E6C003312CB /* TableViewCell.swift */,
-				2E16F11228EAFFF2000184B7 /* FavouriteButton.swift */,
+				2E16F11228EAFFF2000184B7 /* FavoriteButton.swift */,
 				2E06BA5C28EC19180083C43E /* PaddingLabel.swift */,
 				2E06BAE228EC5F030083C43E /* CustomSegmentedControl.swift */,
 			);
@@ -752,7 +728,6 @@
 			isa = PBXGroup;
 			children = (
 				2E8874A328DF58C20012DF93 /* ApiServiceProtocol.swift */,
-				2EF3260528E2FB8D003312CB /* SectionHandler.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -899,21 +874,12 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
-		2EF3260728E2FC14003312CB /* SectionContainer */ = {
-			isa = PBXGroup;
-			children = (
-				2EF3260828E2FC2D003312CB /* SectionContainer.swift */,
-			);
-			path = SectionContainer;
-			sourceTree = "<group>";
-		};
 		2EF3260A28E2FCC1003312CB /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				2EF3261228E3057B003312CB /* View */,
-				2EF3260B28E2FCE8003312CB /* Configuration */,
 				2EF3261D28E30DF7003312CB /* Cell */,
-				2E06BA5E28EC2ACF0083C43E /* SectionHandles */,
+				2EF3260B28E2FCE8003312CB /* Configuration */,
 				2EF3261028E301A6003312CB /* HomeViewController.swift */,
 				2EF3261728E30909003312CB /* HomeInteractor.swift */,
 				2EF3261928E30A45003312CB /* HomePresenter.swift */,
@@ -987,10 +953,6 @@
 			);
 			name = Labrand;
 			packageProductDependencies = (
-				2ED1344A28EAFB8500FE64DC /* SnapKit */,
-				2ED1344D28EAFBA000FE64DC /* Alamofire */,
-				2ED1345028EAFBAD00FE64DC /* SwiftyJSON */,
-				2E16F11028EAFDD4000184B7 /* Cosmos */,
 			);
 			productName = Labrand;
 			productReference = 2E782FB628DC5563003C102B /* Labrand.app */;
@@ -1068,10 +1030,6 @@
 			);
 			mainGroup = 2E782FAD28DC5563003C102B;
 			packageReferences = (
-				2ED1344928EAFB8500FE64DC /* XCRemoteSwiftPackageReference "SnapKit.git" */,
-				2ED1344C28EAFBA000FE64DC /* XCRemoteSwiftPackageReference "Alamofire.git" */,
-				2ED1344F28EAFBAD00FE64DC /* XCRemoteSwiftPackageReference "SwiftyJSON.git" */,
-				2E16F10F28EAFDD4000184B7 /* XCRemoteSwiftPackageReference "Cosmos.git" */,
 			);
 			productRefGroup = 2E782FB728DC5563003C102B /* Products */;
 			projectDirPath = "";
@@ -1236,7 +1194,7 @@
 				2E35174228EAEEC1007D891B /* ProductCollectionItemCell.swift in Sources */,
 				2E06BAE328EC5F030083C43E /* CustomSegmentedControl.swift in Sources */,
 				2E78304228DDBA40003C102B /* LoaderView.swift in Sources */,
-				2E16F11328EAFFF2000184B7 /* FavouriteButton.swift in Sources */,
+				2E16F11328EAFFF2000184B7 /* FavoriteButton.swift in Sources */,
 				2E78301D28DC7FA4003C102B /* UIColor-extension.swift in Sources */,
 				2EF3260D28E2FCF9003312CB /* HomeProtocols.swift in Sources */,
 				2E06BA7028EC342A0083C43E /* TabBarConfigurator.swift in Sources */,
@@ -1306,7 +1264,6 @@
 				2E8874AC28DF5A7E0012DF93 /* ServiceResponse.swift in Sources */,
 				2E78303E28DD95B7003C102B /* LoginView.swift in Sources */,
 				2EF3261F28E30E6C003312CB /* TableViewCell.swift in Sources */,
-				2EF3260628E2FB8D003312CB /* SectionHandler.swift in Sources */,
 				2EA38C9128F2C50E002CA93A /* CategoriesView.swift in Sources */,
 				2E782FBC28DC5563003C102B /* SceneDelegate.swift in Sources */,
 				2EA38C9628F2C847002CA93A /* HeaderTitleView.swift in Sources */,
@@ -1327,13 +1284,11 @@
 				2E8874B528DF70DC0012DF93 /* ApiService.swift in Sources */,
 				2E61BB9128F45BF1002F8472 /* ProductCardRouting.swift in Sources */,
 				2E78306828DF3F25003C102B /* Enums.swift in Sources */,
-				2EF3260928E2FC2D003312CB /* SectionContainer.swift in Sources */,
 				2E61BB9528F45BFC002F8472 /* ProductCardConfigurator.swift in Sources */,
 				2EF3260F28E2FDDB003312CB /* HomeConfigurator.swift in Sources */,
 				2E8874B328DF6AA90012DF93 /* LoginRouter.swift in Sources */,
 				2E06BA7228EC342A0083C43E /* TabBarViewController.swift in Sources */,
 				2E78300628DC636C003C102B /* AppInfo.swift in Sources */,
-				2E06BA6028EC2AE10083C43E /* ProductsSectionHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1432,7 +1387,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = Labrand/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1487,7 +1442,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = Labrand/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1508,6 +1463,7 @@
 				DEVELOPMENT_TEAM = 4V6HY9M86Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Labrand/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LaBrand;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -1538,6 +1494,7 @@
 				DEVELOPMENT_TEAM = 4V6HY9M86Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Labrand/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LaBrand;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -1677,64 +1634,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		2E16F10F28EAFDD4000184B7 /* XCRemoteSwiftPackageReference "Cosmos.git" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/evgenyneu/Cosmos.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-		2ED1344928EAFB8500FE64DC /* XCRemoteSwiftPackageReference "SnapKit.git" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
-		2ED1344C28EAFBA000FE64DC /* XCRemoteSwiftPackageReference "Alamofire.git" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
-		2ED1344F28EAFBAD00FE64DC /* XCRemoteSwiftPackageReference "SwiftyJSON.git" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		2E16F11028EAFDD4000184B7 /* Cosmos */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 2E16F10F28EAFDD4000184B7 /* XCRemoteSwiftPackageReference "Cosmos.git" */;
-			productName = Cosmos;
-		};
-		2ED1344A28EAFB8500FE64DC /* SnapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 2ED1344928EAFB8500FE64DC /* XCRemoteSwiftPackageReference "SnapKit.git" */;
-			productName = SnapKit;
-		};
-		2ED1344D28EAFBA000FE64DC /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 2ED1344C28EAFBA000FE64DC /* XCRemoteSwiftPackageReference "Alamofire.git" */;
-			productName = Alamofire;
-		};
-		2ED1345028EAFBAD00FE64DC /* SwiftyJSON */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 2ED1344F28EAFBAD00FE64DC /* XCRemoteSwiftPackageReference "SwiftyJSON.git" */;
-			productName = SwiftyJSON;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2E782FAE28DC5563003C102B /* Project object */;
 }

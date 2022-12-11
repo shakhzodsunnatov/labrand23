@@ -15,6 +15,7 @@ class BaseView: UIView, LoaderView {
     //MARK: - Initialization
     override init(frame: CGRect) {
         super.init(frame: frame)
+        self.backgroundColor = .appColor(.viewBackground)
     }
     
     required init?(coder: NSCoder) {

@@ -18,6 +18,6 @@ class LoginRouter {
 extension LoginRouter: LoginRouting {
     func openHome() {
         let homeViewController = HomeConfigurator.configureModule()
-        viewController?.navigationController?.pushViewController(homeViewController, animated: true)
+        viewController?.pushViewController(homeViewController)
     }
 }

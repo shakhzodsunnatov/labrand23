@@ -18,15 +18,6 @@ class HomeConfigurator {
         let interactor = HomeInteractor(networkService: ApiService.shared)
         let presenter = HomePresenter()
         
-        // HomeView TableView Cells
-        let newsCell = ProductsSectionHandler()
-        
-        // Home TableView register Cells
-        let sectionHandler = [newsCell, newsCell]
-        let sectionContainer = SectionContainer(handlers: sectionHandler)
-        viewController.sectionContainer = sectionContainer
-        view.registerCellToTableView(sectionContainer: sectionContainer)
-        
         // Configure
         viewController.superView = view
         viewController.interactor = interactor

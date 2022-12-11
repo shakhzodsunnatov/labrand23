@@ -10,7 +10,7 @@
 import UIKit
 import SnapKit
 
-class ShopView: UIView {
+class ShopView: BaseView {
     
     //MARK: - Properties
     private lazy var segmentedControl: CustomSegmentedControl = {
@@ -58,7 +58,6 @@ extension ShopView: CustomSegmentedControlDelegate {
 //MARK: - UI Setup
 extension ShopView {
     private func setupUI() {
-        self.backgroundColor = .appColor(.viewBackground)
         
         self.addSubview(segmentedControl)
         self.addSubview(tableView)

@@ -45,7 +45,6 @@ class CatalogView: BaseView {
 //MARK: - UI Setup
 extension CatalogView {
     private func setupUI() {
-        self.backgroundColor = .appColor(.viewBackground)
         
         addSubview(productCollectionView)
         
