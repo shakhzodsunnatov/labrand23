@@ -17,6 +17,8 @@ protocol ProductCardPresenterOutput: AnyObject {
 //MARK: - Interactor
 protocol ProductCardInteractable: AnyObject {
     func getModel() -> ProductModel
+    func getTableCells() -> [ProductCardTableCellType]
+    func getTableCellTypeBy(indexPath: IndexPath) -> ProductCardTableCellType
 }
 
 //MARK: - Presentable

@@ -15,7 +15,8 @@ class ProductCardInteractor {
     var presenter: ProductCardPresentable?
     var routing: ProductCardRouting?
     
-    var model: ProductModel!
+    private let model: ProductModel!
+    private let tableCells: [ProductCardTableCellType] = ProductCardTableCellType.allCases
     
     init(_ model: ProductModel) {
         self.model = model
@@ -26,7 +27,15 @@ class ProductCardInteractor {
 extension ProductCardInteractor: ProductCardInteractable {
     
     func getModel() -> ProductModel {
-        return self.model
+        return model
+    }
+    
+    func getTableCells() -> [ProductCardTableCellType] {
+        return tableCells
+    }
+    
+    func getTableCellTypeBy(indexPath: IndexPath) -> ProductCardTableCellType {
+        return ProductCardTableCellType.init(rawValue: indexPath.row) ?? .scrollImage
     }
 }
 

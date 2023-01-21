@@ -63,7 +63,7 @@ extension ShopViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: SaleTabeCell.description(), for: indexPath) as! SaleTabeCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: SaleTabelCell.description(), for: indexPath) as! SaleTabelCell
             return cell
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: CategoryTableCell.description(), for: indexPath) as! CategoryTableCell

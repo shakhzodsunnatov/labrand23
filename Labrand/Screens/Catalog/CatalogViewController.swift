@@ -28,7 +28,7 @@ class CatalogViewController: BaseViewController {
         self.rootNavigation?.addLargeNavigationBarTitle()
         self.addBackButton()
         self.addLeftSearchButton()
-        self.rootNavigation?.makeNavigationBarRegural()
+        self.rootNavigation?.makeNavigationBarRegular()
     }
     
     override func viewWillDisappear(_ animated: Bool) {

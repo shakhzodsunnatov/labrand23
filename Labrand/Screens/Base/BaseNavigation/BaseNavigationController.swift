@@ -106,7 +106,7 @@ extension UINavigationController {
         self.navigationBar.layer.shadowRadius = 7
     }
     
-    func makeNavigationBarRegural() {
+    func makeNavigationBarRegular() {
         let navBarAppearance = UINavigationBarAppearance()
         navBarAppearance.configureWithOpaqueBackground()
         navBarAppearance.shadowColor = .clear

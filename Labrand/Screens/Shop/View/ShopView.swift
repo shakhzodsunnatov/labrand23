@@ -31,7 +31,7 @@ class ShopView: BaseView {
         tableView.contentInsetAdjustmentBehavior = .never
         tableView.contentInset = UIEdgeInsets(top: 16, left: 0, bottom: 100, right: 0)
         tableView.backgroundColor = .clear
-        tableView.register(SaleTabeCell.self, forCellReuseIdentifier: SaleTabeCell.description())
+        tableView.register(SaleTabelCell.self, forCellReuseIdentifier: SaleTabelCell.description())
         tableView.register(CategoryTableCell.self, forCellReuseIdentifier: CategoryTableCell.description())
         
         return tableView

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SaleTabeCell: TableViewCell {
+class SaleTabelCell: TableViewCell {
     
     lazy var mainView: UIView = {
         let view = UIView()

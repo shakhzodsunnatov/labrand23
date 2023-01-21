@@ -19,3 +19,14 @@ enum SortType: String, CaseIterable {
     case lowestToHigh = "Price: lowest to high"
     case highestToLow = "Price: highest to low"
 }
+
+enum ProductCardTableCellType: Int, CaseIterable {
+    case scrollImage
+    
+    var tableCellType: UITableViewCell.Type {
+        switch self {
+        case .scrollImage: return ScrollImageCell.self
+        }
+    }
+}
+

@@ -77,6 +77,14 @@ class MockData {
         product
     ]
     
+    lazy var productsForCard: [ProductModel] = [
+        product,
+        product,
+        product,
+        product,
+        product
+    ]
+    
     let shopCategories: [CategoryModel] = [
         CategoryModel(name: "New", image: UIImage(named: "cat2")),
         CategoryModel(name: "Clothes", image: UIImage(named: "cat3")),
