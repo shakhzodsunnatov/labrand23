@@ -14,7 +14,7 @@ enum ViewState: String
 
 enum SortType: String, CaseIterable {
     case popular = "Popular"
-    case newesr = "Newest"
+    case newest = "Newest"
     case customerReview = "Customer Review"
     case lowestToHigh = "Price: lowest to high"
     case highestToLow = "Price: highest to low"
@@ -22,10 +22,12 @@ enum SortType: String, CaseIterable {
 
 enum ProductCardTableCellType: Int, CaseIterable {
     case scrollImage
+    case sizeColor
     
     var tableCellType: UITableViewCell.Type {
         switch self {
         case .scrollImage: return ScrollImageCell.self
+        case .sizeColor: return SizeColorTableCell.self
         }
     }
 }

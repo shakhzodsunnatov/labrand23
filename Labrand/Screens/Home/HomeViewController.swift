@@ -32,6 +32,7 @@ extension HomeViewController: HomePresenterOutput {
 
 //MARK: - Banner Check Button
 extension HomeViewController: BannerCheckButtonDelegate {
+    
     func checkButtonPressed() {
         
     }

@@ -1,5 +1,5 @@
 //
-//  FavouriteButton.swift
+//  LikeButton.swift
 //  Labrand
 //
 //  Created by Shakhzod on 03/10/22.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FavouriteButton: UIButton {
+class LikeButton: UIButton {
     
     override init(frame: CGRect = .zero) {
         super.init(frame: frame)

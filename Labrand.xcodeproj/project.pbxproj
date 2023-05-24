@@ -26,7 +26,8 @@
 		2E06BAE328EC5F030083C43E /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E06BAE228EC5F030083C43E /* CustomSegmentedControl.swift */; };
 		2E06BAE528EC62970083C43E /* UIViewController+BarButtonAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E06BAE428EC62970083C43E /* UIViewController+BarButtonAdditions.swift */; };
 		2E06BAE728EC63280083C43E /* UIViewController+Additional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E06BAE628EC63280083C43E /* UIViewController+Additional.swift */; };
-		2E16F11328EAFFF2000184B7 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E16F11228EAFFF2000184B7 /* FavoriteButton.swift */; };
+		2E16F11328EAFFF2000184B7 /* LikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E16F11228EAFFF2000184B7 /* LikeButton.swift */; };
+		2E1A0D0E297D86DD00698C88 /* SizeColorTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1A0D0D297D86DD00698C88 /* SizeColorTableCell.swift */; };
 		2E35174028EAE793007D891B /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E35173F28EAE793007D891B /* ProductModel.swift */; };
 		2E35174228EAEEC1007D891B /* ProductCollectionItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E35174128EAEEC1007D891B /* ProductCollectionItemCell.swift */; };
 		2E5E717B28EEFFE50029B481 /* UIScrollView-extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E717A28EEFFE50029B481 /* UIScrollView-extension.swift */; };
@@ -37,6 +38,7 @@
 		2E61BB9428F45BFC002F8472 /* ProductCardProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E61BB9228F45BFC002F8472 /* ProductCardProtocols.swift */; };
 		2E61BB9528F45BFC002F8472 /* ProductCardConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E61BB9328F45BFC002F8472 /* ProductCardConfigurator.swift */; };
 		2E61BB9728F45C01002F8472 /* ProductCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E61BB9628F45C01002F8472 /* ProductCardView.swift */; };
+		2E6DBFEB29BDF3FA00795560 /* DropDownMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6DBFEA29BDF3FA00795560 /* DropDownMenuView.swift */; };
 		2E75277828F329EA0089AAA4 /* SortSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E75277728F329EA0089AAA4 /* SortSheetViewController.swift */; };
 		2E782FBA28DC5563003C102B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E782FB928DC5563003C102B /* AppDelegate.swift */; };
 		2E782FBC28DC5563003C102B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E782FBB28DC5563003C102B /* SceneDelegate.swift */; };
@@ -173,7 +175,8 @@
 		2E06BAE228EC5F030083C43E /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
 		2E06BAE428EC62970083C43E /* UIViewController+BarButtonAdditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+BarButtonAdditions.swift"; sourceTree = "<group>"; };
 		2E06BAE628EC63280083C43E /* UIViewController+Additional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Additional.swift"; sourceTree = "<group>"; };
-		2E16F11228EAFFF2000184B7 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
+		2E16F11228EAFFF2000184B7 /* LikeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeButton.swift; sourceTree = "<group>"; };
+		2E1A0D0D297D86DD00698C88 /* SizeColorTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeColorTableCell.swift; sourceTree = "<group>"; };
 		2E35173F28EAE793007D891B /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		2E35174128EAEEC1007D891B /* ProductCollectionItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionItemCell.swift; sourceTree = "<group>"; };
 		2E5E717A28EEFFE50029B481 /* UIScrollView-extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView-extension.swift"; sourceTree = "<group>"; };
@@ -184,6 +187,7 @@
 		2E61BB9228F45BFC002F8472 /* ProductCardProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCardProtocols.swift; sourceTree = "<group>"; };
 		2E61BB9328F45BFC002F8472 /* ProductCardConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCardConfigurator.swift; sourceTree = "<group>"; };
 		2E61BB9628F45C01002F8472 /* ProductCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCardView.swift; sourceTree = "<group>"; };
+		2E6DBFEA29BDF3FA00795560 /* DropDownMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownMenuView.swift; sourceTree = "<group>"; };
 		2E75277728F329EA0089AAA4 /* SortSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortSheetViewController.swift; sourceTree = "<group>"; };
 		2E782FB628DC5563003C102B /* Labrand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Labrand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E782FB928DC5563003C102B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -584,7 +588,7 @@
 				2EB0B0B628E1D0D1008CE1E6 /* BaseButton.swift */,
 				2EF325FA28E2D819003312CB /* BaseLoadingButton.swift */,
 				2EF3261E28E30E6C003312CB /* TableViewCell.swift */,
-				2E16F11228EAFFF2000184B7 /* FavoriteButton.swift */,
+				2E16F11228EAFFF2000184B7 /* LikeButton.swift */,
 				2E06BA5C28EC19180083C43E /* PaddingLabel.swift */,
 				2E06BAE228EC5F030083C43E /* CustomSegmentedControl.swift */,
 			);
@@ -852,6 +856,7 @@
 			isa = PBXGroup;
 			children = (
 				2EE79685295899C200064160 /* ScrollImageCell.swift */,
+				2E1A0D0D297D86DD00698C88 /* SizeColorTableCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -860,6 +865,7 @@
 			isa = PBXGroup;
 			children = (
 				2EF325F428E2C7D0003312CB /* LoadingButton.swift */,
+				2E6DBFEA29BDF3FA00795560 /* DropDownMenuView.swift */,
 			);
 			path = Libraries;
 			sourceTree = "<group>";
@@ -1191,19 +1197,21 @@
 				2EF3262128E30FEC003312CB /* ProductsTableCell.swift in Sources */,
 				2EA38CB128F2F3E7002CA93A /* CategoryBtnCollectionCell.swift in Sources */,
 				2E78303328DC88C3003C102B /* UIApplicationExtension.swift in Sources */,
+				2E1A0D0E297D86DD00698C88 /* SizeColorTableCell.swift in Sources */,
 				2E61BB8E28F45BF1002F8472 /* ProductCardPresenter.swift in Sources */,
 				2EF3261428E30588003312CB /* HomeView.swift in Sources */,
 				2E78302328DC8679003C102B /* UIView-extension.swift in Sources */,
 				2E35174228EAEEC1007D891B /* ProductCollectionItemCell.swift in Sources */,
 				2E06BAE328EC5F030083C43E /* CustomSegmentedControl.swift in Sources */,
 				2E78304228DDBA40003C102B /* LoaderView.swift in Sources */,
-				2E16F11328EAFFF2000184B7 /* FavoriteButton.swift in Sources */,
+				2E16F11328EAFFF2000184B7 /* LikeButton.swift in Sources */,
 				2E78301D28DC7FA4003C102B /* UIColor-extension.swift in Sources */,
 				2EF3260D28E2FCF9003312CB /* HomeProtocols.swift in Sources */,
 				2E06BA7028EC342A0083C43E /* TabBarConfigurator.swift in Sources */,
 				2E78300828DC6443003C102B /* GCDUtils.swift in Sources */,
 				2E35174028EAE793007D891B /* ProductModel.swift in Sources */,
 				2E61BB9728F45C01002F8472 /* ProductCardView.swift in Sources */,
+				2E6DBFEB29BDF3FA00795560 /* DropDownMenuView.swift in Sources */,
 				2E78302B28DC87CD003C102B /* Alert.swift in Sources */,
 				2EA38CA028F2CEA7002CA93A /* CatalogViewController.swift in Sources */,
 				2EF3261C28E30A9C003312CB /* HomeRouting.swift in Sources */,

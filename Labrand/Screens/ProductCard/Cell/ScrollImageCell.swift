@@ -17,7 +17,7 @@ class ScrollImageCell: TableViewCell {
     
     override func setupUI() {
         super.setupUI()
-        
+
         containerScrollView = crateContainerScrollView()
         configureScroll(images: mockImages)
     }
@@ -31,14 +31,11 @@ extension ScrollImageCell {
                                                  height: 420)
         for (index, image) in images.enumerated() {
             let imageView = UIImageView(image: image)
-            imageView.backgroundColor = UIColor.randomColor()
-            
-            self.containerScrollView.addSubview(imageView)
-            
             imageView.frame = CGRect(x: CGFloat(SCREEN_WIDTH) * CGFloat(index),
                                      y: 0,
                                      width: SCREEN_WIDTH,
                                      height: 420)
+            containerScrollView.addSubview(imageView)
         }
         
     }
@@ -49,7 +46,6 @@ extension ScrollImageCell {
     
     private func crateContainerScrollView() -> UIScrollView {
         let scrollView = UIScrollView()
-//        scrollView.contentSize = CGSize(width: 1000, height: .zero)
         scrollView.isPagingEnabled = true
         self.contentView.addSubview(scrollView)
         
@@ -57,7 +53,6 @@ extension ScrollImageCell {
             make.edges.equalToSuperview()
             make.height.equalTo(420)
         }
-        
         return scrollView
     }
 }

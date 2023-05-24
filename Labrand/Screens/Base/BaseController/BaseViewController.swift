@@ -32,6 +32,7 @@ class BaseViewController: UIViewController, UIGestureRecognizerDelegate {
         rootNavigation?.setupSwipingGestures()
     }
     
+    
     //MARK: - Helper functions
     func makeVisibleNavigation() {
         if #available(iOS 15.0, *) {

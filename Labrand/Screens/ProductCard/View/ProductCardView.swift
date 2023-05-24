@@ -13,7 +13,7 @@ import Cosmos
 class ProductCardView: UIView {
     
     //MARK: - Properties
-    var tableView: UITableView!
+    private(set) var tableView: UITableView!
     
     //MARK: - Initialization
     override init(frame: CGRect) {
@@ -44,6 +44,7 @@ extension ProductCardView {
         tableView.contentInsetAdjustmentBehavior = .never
         tableView.separatorStyle = .none
         tableView.registerCell(ScrollImageCell.self)
+        tableView.registerCell(SizeColorTableCell.self)
         
         self.addSubview(tableView)
         

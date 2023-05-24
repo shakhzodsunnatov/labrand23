@@ -20,7 +20,7 @@ class ProductCollectionItemCell: UICollectionViewCell {
     var containerStack: UIStackView!
     var imageView: UIImageView!
     var markerLabel: UILabel!
-    var favouriteButton: FavouriteButton!
+    var favouriteButton: LikeButton!
     var rateView: CosmosView!
     var brandLabel: UILabel!
     var nameLabel: UILabel!
@@ -163,8 +163,8 @@ extension ProductCollectionItemCell {
         return label
     }
     
-    private func favouriteButtonCreate() -> FavouriteButton {
-        let button = FavouriteButton()
+    private func favouriteButtonCreate() -> LikeButton {
+        let button = LikeButton()
         button.addTarget(self, action: #selector(favouriteButtonPressed))
         
         return button

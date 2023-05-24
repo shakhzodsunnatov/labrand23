@@ -19,7 +19,8 @@ extension UIViewController {
     func addLeftButton(image: UIImage? = nil, selector: Selector? = nil) {
         var imageBack = image
         if (image == nil) {
-            let image = UIImage(systemName: "chevron.left")
+            let configuration = UIImage.SymbolConfiguration(pointSize: 16, weight: .medium)
+            let image = UIImage(systemName: "chevron.left", withConfiguration: configuration)
             imageBack = image?.withTintColor(.black0, renderingMode: .alwaysOriginal)
         }
         
@@ -61,7 +62,11 @@ extension UIViewController {
         addRightButton(image: image, selector: selector)
     }
     
-    func addRightButton(image: UIImage, selector: Selector) {
+    func addRightButton(image: UIImage, selector: Selector, isBold: Bool = false) {
+        if isBold {
+            let configuration = UIImage.SymbolConfiguration(pointSize: 18, weight: .bold)
+            image.withConfiguration(configuration)
+        }
         let barButton = createBarButton(image: image, selector: selector)
         self.navigationItem.rightBarButtonItem = barButton
     }

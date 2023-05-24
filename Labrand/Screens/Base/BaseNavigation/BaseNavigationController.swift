@@ -129,6 +129,13 @@ extension UINavigationController {
         self.navigationBar.tintColor = UIColor.white
     }
     
+    func addShadowToNavigation() {
+        self.navigationBar.layer.shadowColor = UIColor.black.cgColor
+        self.navigationBar.layer.shadowOpacity = 0.2
+        self.navigationBar.layer.shadowOffset = CGSize.zero
+        self.navigationBar.layer.shadowRadius = 7
+    }
+    
     func setTitleColor(_ titleColor: UIColor) {
         self.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : titleColor]
     }

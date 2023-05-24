@@ -9,7 +9,7 @@
 
 import UIKit
 
-class ProductCardViewController: UIViewController {
+class ProductCardViewController: BaseViewController {
 
     //MARK: - Properties
     var superView: ProductCardView?
@@ -20,8 +20,32 @@ class ProductCardViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
     }
+ 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let navTitle = interactor?.getModel().title
+        self.rootNavigation?.setTitleText(navTitle ?? "***")
+        self.addRightButton(
+            image: UIImage(systemName: "square.and.arrow.up")!,
+            selector: #selector(shareButtonPressed)
+        )
+        self.addBackButton()
+        self.rootNavigation?.makeNavigationBarRegular()
+        self.rootNavigation?.addShadowToNavigation()
+    }
     
 }
+
+
+//MARK: - Private
+extension ProductCardViewController {
+    
+    @objc
+    private func shareButtonPressed() {
+//        interactor.shareButtonPressed()
+    }
+}
+
 
 //MARK: - ProductCardPresenterOutput
 extension ProductCardViewController: ProductCardPresenterOutput {
@@ -47,13 +71,23 @@ extension ProductCardViewController: UITableViewDataSource {
         let productCell = interactor?.getTableCellTypeBy(indexPath: indexPath) //TODO: - do All staff inside interactor
         let cellType = productCell?.tableCellType ?? UITableViewCell.self
         let cell = tableView.dequeueCell(cellType, indexPath: indexPath)
-        
+
         switch productCell {
+            
         case .scrollImage:
             
             print("scrollView")
             
-        case .none: break
+        case .sizeColor:
+            
+            let sizeName = Array(0...5).map({ "\($0) Size" })
+            let colorName = Array(0...3).map({ "\($0) Color" })
+            
+            (cell as? SizeColorTableCell)?.configurationCell(sizes: sizeName, colorsName: colorName)
+            
+        case .none:
+            let cell = UITableViewCell()
+            cell.backgroundColor = .red
             
         }
         return cell
