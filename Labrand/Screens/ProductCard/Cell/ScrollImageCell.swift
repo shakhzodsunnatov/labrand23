@@ -31,10 +31,13 @@ extension ScrollImageCell {
                                                  height: 420)
         for (index, image) in images.enumerated() {
             let imageView = UIImageView(image: image)
-            imageView.frame = CGRect(x: CGFloat(SCREEN_WIDTH) * CGFloat(index),
+            let separatePadding = index == 0 ? 0.0 : 4.0
+            
+            imageView.frame = CGRect(x: CGFloat(SCREEN_WIDTH) * CGFloat(index) + separatePadding,
                                      y: 0,
                                      width: SCREEN_WIDTH,
                                      height: 420)
+            
             containerScrollView.addSubview(imageView)
         }
         

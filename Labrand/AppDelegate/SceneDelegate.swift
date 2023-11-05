@@ -19,8 +19,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
         
-//        let vc = TabBarConfigurator.configureModule()
-        let vc = BaseNavigationController(rootViewController: ProductCardConfigurator.configureModule(ProductModel()))
+        let vc = TabBarConfigurator.configureModule()
+//        let vc = BaseNavigationController(rootViewController: ProductCardConfigurator.configureModule(ProductModel()))
         
         window?.rootViewController = vc
         window?.makeKeyAndVisible()

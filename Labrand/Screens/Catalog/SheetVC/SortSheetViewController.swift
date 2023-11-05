@@ -25,7 +25,7 @@ class SortSheetViewController: UIViewController {
         
         return table
     }()
-    private let sheetContrinerView: UIView = {
+    private let sheetContainerView: UIView = {
         let view = UIView()
         view.backgroundColor = .appColor(.viewBackground)
         view.clipsToBounds = true
@@ -37,10 +37,10 @@ class SortSheetViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.addSubview(sheetContrinerView)
-        sheetContrinerView.addSubview(tableView)
+        view.addSubview(sheetContainerView)
+        sheetContainerView.addSubview(tableView)
         
-        sheetContrinerView.snp.makeConstraints { make in
+        sheetContainerView.snp.makeConstraints { make in
             make.height.equalTo(350)
             make.left.right.bottom.equalToSuperview()
         }

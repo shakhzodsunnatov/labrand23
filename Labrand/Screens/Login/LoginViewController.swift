@@ -28,8 +28,7 @@ class LoginViewController: BaseViewController {
 }
 
 //MARK: - Private
-extension LoginViewController {
-}
+extension LoginViewController {}
 
 //MARK: - ILoginView
 extension LoginViewController: ILoginView {

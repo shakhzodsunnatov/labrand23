@@ -29,10 +29,10 @@ class BaseNavigationController: UINavigationController, UIGestureRecognizerDeleg
         self.navigationBar.backgroundColor = color
     }
     
-    func setTitleText(_ text:String, color: UIColor = UIColor.black) {
+    func setTitleText(_ text:String, color: UIColor = UIColor.black, font: UIFont) {
         let textAttributes = [NSAttributedString.Key.foregroundColor: color,
                               NSAttributedString.Key.backgroundColor:UIColor.clear,
-                              NSAttributedString.Key.font: UIFont.systemFont(ofSize: 24)]
+                              NSAttributedString.Key.font: font]
         self.navigationBar.titleTextAttributes = textAttributes
         if let vc = self.viewControllers.last {
             vc.title = text

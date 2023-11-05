@@ -13,6 +13,7 @@ import SnapKit
 class ShopView: BaseView {
     
     //MARK: - Properties
+    
     private lazy var segmentedControl: CustomSegmentedControl = {
         let segment = CustomSegmentedControl()
         segment.setButtonTitles(buttonTitles: ["Women", "Men", "Child"])
